@@ -9,36 +9,43 @@ class Command(BaseCommand):
         id_process = options['id_process']
         """Добавление покупателя и товаров"""
         if id_process == 1:   # Create
-            for i in range(50):
-                customer = models.Customer(name=f'NAME {i}', email=f'fox{i}@in_tex.com',
-                                           number_phone=5543456453+i, address=f'street{i}')
-                customer.save()
-            for i in range(50):
-                product = models.Product(product_name=f'NAME_PROD {i}', comment=f'comment {i}',
-                                           price=10*i, count=2*i)
-                product.save()
-            """-----------------------------------------------"""
-            '''Один ко многим, добавление ордера и товаров к ордеру'''
-            customer = models.Customer.objects.filter(pk=1).first()
-            product_1 = models.Product.objects.filter(pk=1).first()
-            product_2 = models.Product.objects.filter(pk=2).first()
-            product_3 = models.Product.objects.filter(pk=3).first()
 
-            summa_pds = product_1.price + product_2.price + product_3.price
 
-            order = models.Order(customer=customer, order_amount=summa_pds)
+            #for i in range(50):
+            #    customer = models.Customer(name=f'NAME {i}', email=f'fox{i}@in_tex.com',
+            #                               number_phone=5543456453+i, address=f'street{i}')
+            #    customer.save()
+            #for i in range(50):
+            #    product = models.Product(product_name=f'NAME_PROD {i}', comment=f'comment {i}',
+            #                               price=10*i, count=2*i)
+            #    product.save()
+            #"""-----------------------------------------------"""
+            #'''Один ко многим, добавление ордера и товаров к ордеру'''
+            customers = models.Customer.objects.filter(pk=1).first()
+
+
+            order = models.Order(customer=customers, order_amount=100.00)
             order.save()
-
-            prod_add_in_order_1 = models.ProductInOrder(order=order, product=product_1)
-            prod_add_in_order_2 = models.ProductInOrder(order=order, product=product_2)
-            prod_add_in_order_3 = models.ProductInOrder(order=order, product=product_3)
-            prod_add_in_order_1.save()
-            prod_add_in_order_2.save()
-            prod_add_in_order_3.save()
-
-
-
-
+            print(order)
+            #product_1 = models.Product.objects.filter(pk=1).first()
+            #product_2 = models.Product.objects.filter(pk=2).first()
+            #product_3 = models.Product.objects.filter(pk=3).first()
+#
+            #summa_pds = product_1.price + product_2.price + product_3.price
+#
+            #order = models.Order(customer=customer, order_amount=summa_pds)
+            #order.save()
+#
+            #prod_add_in_order_1 = models.ProductInOrder(order=order, product=product_1)
+            #prod_add_in_order_2 = models.ProductInOrder(order=order, product=product_2)
+            #prod_add_in_order_3 = models.ProductInOrder(order=order, product=product_3)
+            #prod_add_in_order_1.save()
+            #prod_add_in_order_2.save()
+            #prod_add_in_order_3.save()
+#
+#
+#
+#
         elif id_process == 2: # Read
             for i in list(models.Order.objects.all()):
                 i:models.Order

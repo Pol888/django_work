@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+     {{ pub.heading }} !
+{% endblock %}
+
+{% block main %}
+
+    <p>
+        Heading: {{ pub.heading }}<br>
+        Content: {{ pub.content }}<br><br><br>
+        {% for i in cs %}
+            {% if i.date_create != i.date_update %}
+               Comment: {{ i.author }}|{{ i.comment }}| изменен: {{ i.date_update }}<br>
+            {% else %}
+               Comment: {{ i.author }}|{{ i.comment }}| создан: {{ i.date_create }}<br>
+            {% endif %}
+        {% endfor %}
+    </p>
+
+{% endblock %}

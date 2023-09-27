@@ -1663,3 +1663,2267 @@ INFO 2023-09-23 16:08:50,765 autoreload 1164 20720 C:\Users\pollove\Desktop\my_t
 INFO 2023-09-23 16:08:52,859 autoreload 23960 9260 Watching for file changes with StatReloader
 INFO 2023-09-23 16:10:57,184 autoreload 23960 9260 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_2\models.py changed, reloading.
 INFO 2023-09-23 16:10:58,112 autoreload 24168 14284 Watching for file changes with StatReloader
+INFO 2023-09-25 17:48:44,409 autoreload 20028 7752 Watching for file changes with StatReloader
+INFO 2023-09-25 17:50:58,189 autoreload 20028 7752 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_2\models.py changed, reloading.
+INFO 2023-09-25 17:50:59,031 autoreload 12608 11040 Watching for file changes with StatReloader
+INFO 2023-09-26 08:23:06,319 autoreload 21972 23504 Watching for file changes with StatReloader
+WARNING 2023-09-26 08:23:22,160 views 21972 2520 Сработал маршрут task_5_2 и значение 5
+INFO 2023-09-26 08:23:22,161 basehttp 21972 2520 "GET /app_2/task_5_2/ HTTP/1.1" 200 13
+WARNING 2023-09-26 08:23:22,940 log 21972 2520 Not Found: /favicon.ico
+WARNING 2023-09-26 08:23:22,941 basehttp 21972 2520 "GET /favicon.ico HTTP/1.1" 404 2441
+INFO 2023-09-26 08:23:36,504 basehttp 21972 2520 "GET /app_3/main_site/ HTTP/1.1" 200 230
+INFO 2023-09-26 08:23:50,153 basehttp 21972 2520 "GET /app_3/about_me/ HTTP/1.1" 200 194
+INFO 2023-09-26 08:23:50,293 basehttp 21972 25168 "GET /static/image/liar-liar.jpg HTTP/1.1" 200 14587
+INFO 2023-09-26 08:24:18,611 basehttp 21972 25168 "GET /app_3/about_me/ HTTP/1.1" 200 195
+INFO 2023-09-26 08:51:38,294 autoreload 21972 23504 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_project_django\settings.py changed, reloading.
+INFO 2023-09-26 08:51:39,265 autoreload 9508 22700 Watching for file changes with StatReloader
+INFO 2023-09-26 08:55:00,178 autoreload 9508 22700 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 08:55:01,113 autoreload 3504 8476 Watching for file changes with StatReloader
+ERROR 2023-09-26 08:55:15,799 log 3504 7636 Internal Server Error: /app_3/main_site/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 11, in main_site
+    return render(request, './templates/base.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: ./templates/base.html
+ERROR 2023-09-26 08:55:15,803 basehttp 3504 7636 "GET /app_3/main_site/ HTTP/1.1" 500 85167
+INFO 2023-09-26 08:55:32,684 autoreload 3504 8476 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 08:55:33,533 autoreload 3160 25916 Watching for file changes with StatReloader
+ERROR 2023-09-26 08:55:36,779 log 3160 19956 Internal Server Error: /app_3/main_site/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 11, in main_site
+    return render(request, '././templates/base.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: ././templates/base.html
+ERROR 2023-09-26 08:55:36,784 basehttp 3160 19956 "GET /app_3/main_site/ HTTP/1.1" 500 85328
+INFO 2023-09-26 08:56:03,082 autoreload 3160 25916 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 08:56:03,962 autoreload 3128 16188 Watching for file changes with StatReloader
+ERROR 2023-09-26 08:56:09,649 log 3128 24280 Internal Server Error: /app_3/main_site/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 11, in main_site
+    return render(request, '../../templates/base.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: ../../templates/base.html
+ERROR 2023-09-26 08:56:09,659 basehttp 3128 24280 "GET /app_3/main_site/ HTTP/1.1" 500 83754
+INFO 2023-09-26 08:57:37,737 autoreload 3128 16188 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 08:57:38,576 autoreload 980 1460 Watching for file changes with StatReloader
+ERROR 2023-09-26 08:57:42,590 log 980 3788 Internal Server Error: /app_3/main_site/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 11, in main_site
+    return render(request, './my_test_app_3/base.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 5: 'title'. Did you forget to register or load this tag?
+ERROR 2023-09-26 08:57:42,603 basehttp 980 3788 "GET /app_3/main_site/ HTTP/1.1" 500 136663
+INFO 2023-09-26 08:58:49,699 basehttp 980 3788 "GET /app_3/main_site/ HTTP/1.1" 200 172
+WARNING 2023-09-26 13:44:05,231 log 980 7616 Not Found: /favicon.ico
+WARNING 2023-09-26 13:44:05,243 basehttp 980 7616 "GET /favicon.ico HTTP/1.1" 404 2441
+INFO 2023-09-26 14:15:28,290 autoreload 14268 25040 Watching for file changes with StatReloader
+ERROR 2023-09-26 14:15:54,648 log 14268 15088 Internal Server Error: /app_3/main_site/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 11, in main_site
+    return render(request, './my_test_app_3/base.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 5: 'title'. Did you forget to register or load this tag?
+ERROR 2023-09-26 14:15:54,657 basehttp 14268 15088 "GET /app_3/main_site/ HTTP/1.1" 500 136937
+INFO 2023-09-26 14:16:31,911 autoreload 10816 2424 Watching for file changes with StatReloader
+ERROR 2023-09-26 14:16:36,653 log 10816 26248 Internal Server Error: /app_3/main_site/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 11, in main_site
+    return render(request, './my_test_app_3/base.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 5: 'title'. Did you forget to register or load this tag?
+ERROR 2023-09-26 14:16:36,665 basehttp 10816 26248 "GET /app_3/main_site/ HTTP/1.1" 500 137122
+INFO 2023-09-26 14:16:57,048 basehttp 10816 26248 "GET /app_3/main_site/ HTTP/1.1" 200 191
+INFO 2023-09-26 14:31:36,168 basehttp 10816 17596 "GET /app_3/main_site/ HTTP/1.1" 200 210
+INFO 2023-09-26 14:32:22,680 basehttp 10816 17596 "GET /app_3/main_site/ HTTP/1.1" 200 328
+INFO 2023-09-26 14:38:30,732 basehttp 10816 6716 "GET /app_3/main_site/ HTTP/1.1" 200 425
+INFO 2023-09-26 14:39:34,508 basehttp 10816 6716 "GET /app_3/main_site/ HTTP/1.1" 200 428
+INFO 2023-09-26 14:43:15,507 basehttp 10816 6716 "GET /app_3/main_site/ HTTP/1.1" 200 638
+INFO 2023-09-26 14:44:31,848 basehttp 10816 6716 "GET /app_3/main_site/ HTTP/1.1" 200 840
+INFO 2023-09-26 14:45:11,487 basehttp 10816 6716 "GET /app_3/main_site/ HTTP/1.1" 200 842
+INFO 2023-09-26 14:48:30,813 basehttp 10816 6716 "GET /app_3/main_site/ HTTP/1.1" 200 840
+INFO 2023-09-26 14:49:07,491 basehttp 10816 6716 "GET /app_3/main_site/ HTTP/1.1" 200 840
+INFO 2023-09-26 14:49:18,206 basehttp 10816 6716 "GET /app_3/main_site/ HTTP/1.1" 200 840
+INFO 2023-09-26 14:49:39,358 basehttp 10816 6716 "GET /app_3/main_site/ HTTP/1.1" 200 840
+INFO 2023-09-26 14:52:45,917 basehttp 10816 6716 "GET /app_3/main_site/ HTTP/1.1" 200 870
+INFO 2023-09-26 14:52:47,223 basehttp 10816 6716 "GET /app_3/main_site/ HTTP/1.1" 200 870
+INFO 2023-09-26 14:54:13,221 basehttp 10816 6716 "GET /app_3/main_site/ HTTP/1.1" 200 870
+INFO 2023-09-26 15:08:59,614 autoreload 10816 2424 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 15:09:01,071 autoreload 26444 12516 Watching for file changes with StatReloader
+INFO 2023-09-26 15:09:02,885 basehttp 26444 17652 "GET /app_3/main_site/ HTTP/1.1" 200 845
+INFO 2023-09-26 15:09:24,250 basehttp 26444 17652 "GET /app_3/about_me/ HTTP/1.1" 200 820
+INFO 2023-09-26 15:09:24,432 basehttp 26444 15560 "GET /static/image/liar-liar.jpg HTTP/1.1" 200 14587
+INFO 2023-09-26 15:10:06,145 basehttp 26444 15560 "GET /app_3/about_me/ HTTP/1.1" 200 828
+ERROR 2023-09-26 15:10:24,004 log 26444 15560 Internal Server Error: /app_3/about_me/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 15, in about_me
+    return render(request, 'my_test_app_3/about_me.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '()' from 'super()'
+ERROR 2023-09-26 15:10:24,018 basehttp 26444 15560 "GET /app_3/about_me/ HTTP/1.1" 500 170699
+INFO 2023-09-26 15:12:17,529 basehttp 26444 15560 "GET /app_3/about_me/ HTTP/1.1" 200 830
+INFO 2023-09-26 15:16:19,993 autoreload 26444 12516 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 15:16:21,112 autoreload 9392 12224 Watching for file changes with StatReloader
+INFO 2023-09-26 15:33:32,067 autoreload 9392 12224 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 15:33:33,470 autoreload 20012 27508 Watching for file changes with StatReloader
+WARNING 2023-09-26 15:33:42,646 log 20012 3700 Not Found: /app_3//heads_and_tails/7
+WARNING 2023-09-26 15:33:42,647 basehttp 20012 3700 "GET /app_3//heads_and_tails/7 HTTP/1.1" 404 3344
+INFO 2023-09-26 15:33:59,406 basehttp 20012 3700 "GET /app_3/heads_and_tails/7 HTTP/1.1" 301 0
+ERROR 2023-09-26 15:33:59,473 log 20012 24880 Internal Server Error: /app_3/heads_and_tails/7/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 20, in heads_and_tails
+    return render(request, '/my_test_app_3/task_3', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: /my_test_app_3/task_3
+ERROR 2023-09-26 15:33:59,479 basehttp 20012 24880 "GET /app_3/heads_and_tails/7/ HTTP/1.1" 500 85107
+ERROR 2023-09-26 15:37:14,298 log 20012 24880 Internal Server Error: /app_3/heads_and_tails/79/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 20, in heads_and_tails
+    return render(request, '/my_test_app_3/task_3', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: /my_test_app_3/task_3
+ERROR 2023-09-26 15:37:14,302 basehttp 20012 24880 "GET /app_3/heads_and_tails/79/ HTTP/1.1" 500 94016
+INFO 2023-09-26 15:37:19,172 basehttp 20012 24880 "GET /app_3/heads_and_tails/79 HTTP/1.1" 301 0
+ERROR 2023-09-26 15:37:19,218 log 20012 22320 Internal Server Error: /app_3/heads_and_tails/79/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 20, in heads_and_tails
+    return render(request, '/my_test_app_3/task_3', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: /my_test_app_3/task_3
+ERROR 2023-09-26 15:37:19,222 basehttp 20012 22320 "GET /app_3/heads_and_tails/79/ HTTP/1.1" 500 94106
+WARNING 2023-09-26 15:37:23,334 log 20012 22320 Not Found: /app_3/heads_and_tails/
+WARNING 2023-09-26 15:37:23,335 basehttp 20012 22320 "GET /app_3/heads_and_tails/ HTTP/1.1" 404 3338
+ERROR 2023-09-26 15:38:09,682 log 20012 22320 Internal Server Error: /app_3/cubic/6/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 25, in cubic
+    return render(request, '/my_test_app_3/task_3', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: /my_test_app_3/task_3
+ERROR 2023-09-26 15:38:09,689 basehttp 20012 22320 "GET /app_3/cubic/6/ HTTP/1.1" 500 84454
+ERROR 2023-09-26 15:38:53,262 log 20012 22320 Internal Server Error: /app_3/cubic/6/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 25, in cubic
+    return render(request, '/my_test_app_3/task_3', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: /my_test_app_3/task_3
+ERROR 2023-09-26 15:38:53,266 basehttp 20012 22320 "GET /app_3/cubic/6/ HTTP/1.1" 500 84591
+ERROR 2023-09-26 15:39:16,774 log 20012 22320 Internal Server Error: /app_3/cubic/6/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 25, in cubic
+    return render(request, '/my_test_app_3/task_3', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: /my_test_app_3/task_3
+ERROR 2023-09-26 15:39:16,782 basehttp 20012 22320 "GET /app_3/cubic/6/ HTTP/1.1" 500 84591
+INFO 2023-09-26 15:42:11,970 autoreload 20012 27508 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 15:42:13,047 autoreload 1124 1656 Watching for file changes with StatReloader
+ERROR 2023-09-26 15:42:14,869 log 1124 18740 Internal Server Error: /app_3/cubic/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 26, in cubic
+    return render(request, '/my_test_app_3/task_3', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: /my_test_app_3/task_3
+ERROR 2023-09-26 15:42:14,875 basehttp 1124 18740 "GET /app_3/cubic/ HTTP/1.1" 500 84316
+INFO 2023-09-26 15:43:08,826 autoreload 1124 1656 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 15:43:09,908 autoreload 5580 24612 Watching for file changes with StatReloader
+ERROR 2023-09-26 15:43:11,333 log 5580 2592 Internal Server Error: /app_3/cubic/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 27, in cubic
+    return render(request, '/my_test_app_3/task_3', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: /my_test_app_3/task_3
+ERROR 2023-09-26 15:43:11,340 basehttp 5580 2592 "GET /app_3/cubic/ HTTP/1.1" 500 84439
+INFO 2023-09-26 15:44:17,888 autoreload 5580 24612 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 15:44:18,849 autoreload 26444 19192 Watching for file changes with StatReloader
+ERROR 2023-09-26 15:44:21,129 log 26444 9608 Internal Server Error: /app_3/cubic/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 27, in cubic
+    return render(request, '/my_test_app_3/task_3')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: /my_test_app_3/task_3
+ERROR 2023-09-26 15:44:21,137 basehttp 26444 9608 "GET /app_3/cubic/ HTTP/1.1" 500 84283
+ERROR 2023-09-26 15:45:17,653 log 26444 9608 Internal Server Error: /app_3/main_site/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 37, in main_site
+    return render(request, '/my_test_app_3/main_task_1.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: /my_test_app_3/main_task_1.html
+ERROR 2023-09-26 15:45:17,659 basehttp 26444 9608 "GET /app_3/main_site/ HTTP/1.1" 500 83955
+INFO 2023-09-26 15:45:47,534 autoreload 25384 19616 Watching for file changes with StatReloader
+ERROR 2023-09-26 15:45:51,565 log 25384 23856 Internal Server Error: /app_3/main_site/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 37, in main_site
+    return render(request, '/my_test_app_3/main_task_1.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: /my_test_app_3/main_task_1.html
+ERROR 2023-09-26 15:45:51,572 basehttp 25384 23856 "GET /app_3/main_site/ HTTP/1.1" 500 84092
+INFO 2023-09-26 15:46:43,219 basehttp 25384 23856 "GET /app_3/about_me/ HTTP/1.1" 200 826
+ERROR 2023-09-26 15:46:55,280 log 25384 23856 Internal Server Error: /app_3/main_site/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 37, in main_site
+    return render(request, '/my_test_app_3/main_task_1.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: /my_test_app_3/main_task_1.html
+ERROR 2023-09-26 15:46:55,288 basehttp 25384 23856 "GET /app_3/main_site/ HTTP/1.1" 500 83955
+INFO 2023-09-26 15:48:08,561 autoreload 25384 19616 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 15:48:09,567 autoreload 12504 23984 Watching for file changes with StatReloader
+INFO 2023-09-26 15:48:15,714 basehttp 12504 2344 "GET /app_3/main_site/ HTTP/1.1" 200 845
+ERROR 2023-09-26 15:48:48,930 log 12504 2344 Internal Server Error: /app_3/cubic/6/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cubic() got an unexpected keyword argument 'count'
+ERROR 2023-09-26 15:48:48,932 basehttp 12504 2344 "GET /app_3/cubic/6/ HTTP/1.1" 500 66178
+ERROR 2023-09-26 15:49:05,106 log 12504 2344 Internal Server Error: /app_3/heads_and_tails/79/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 20, in heads_and_tails
+    return render(request, 'my_test_app_3/task_3', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: my_test_app_3/task_3
+ERROR 2023-09-26 15:49:05,115 basehttp 12504 2344 "GET /app_3/heads_and_tails/79/ HTTP/1.1" 500 95620
+INFO 2023-09-26 15:51:41,529 autoreload 12504 23984 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 15:51:42,610 autoreload 7244 10284 Watching for file changes with StatReloader
+INFO 2023-09-26 15:51:43,835 basehttp 7244 15428 "GET /app_3/heads_and_tails/79/ HTTP/1.1" 200 2585
+INFO 2023-09-26 15:52:26,420 autoreload 7244 10284 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 15:52:27,506 autoreload 12944 15204 Watching for file changes with StatReloader
+INFO 2023-09-26 15:52:30,731 basehttp 12944 10092 "GET /app_3/heads_and_tails/79/ HTTP/1.1" 200 2565
+INFO 2023-09-26 15:52:59,784 basehttp 12944 10092 "GET /app_3/cubic/79/ HTTP/1.1" 200 765
+INFO 2023-09-26 15:53:05,307 basehttp 12944 10092 "GET /app_3/cubic/7/ HTTP/1.1" 200 765
+INFO 2023-09-26 15:53:40,898 autoreload 12944 15204 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 15:53:42,153 autoreload 3852 24360 Watching for file changes with StatReloader
+INFO 2023-09-26 15:53:44,236 basehttp 3852 18076 "GET /app_3/cubic/7/ HTTP/1.1" 200 871
+INFO 2023-09-26 15:53:47,781 basehttp 3852 18076 "GET /app_3/cubic/7/ HTTP/1.1" 200 871
+WARNING 2023-09-26 15:54:14,278 log 3852 18076 Not Found: /app_3/random_number/70/
+WARNING 2023-09-26 15:54:14,279 basehttp 3852 18076 "GET /app_3/random_number/70/ HTTP/1.1" 404 3340
+INFO 2023-09-26 15:54:49,217 basehttp 3852 18076 "GET /app_3/random_number/70 HTTP/1.1" 200 1882
+INFO 2023-09-26 15:55:11,962 autoreload 3852 24360 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\urls.py changed, reloading.
+INFO 2023-09-26 15:55:12,967 autoreload 17628 17496 Watching for file changes with StatReloader
+INFO 2023-09-26 15:55:21,781 basehttp 17628 11992 "GET /app_3/random_number/70 HTTP/1.1" 301 0
+INFO 2023-09-26 15:55:21,801 basehttp 17628 14996 "GET /app_3/random_number/70/ HTTP/1.1" 200 1880
+INFO 2023-09-26 15:55:22,498 basehttp 17628 14996 "GET /app_3/random_number/70/ HTTP/1.1" 200 1882
+INFO 2023-09-26 15:55:23,148 basehttp 17628 14996 "GET /app_3/random_number/70/ HTTP/1.1" 200 1885
+INFO 2023-09-26 15:55:23,808 basehttp 17628 14996 "GET /app_3/random_number/70/ HTTP/1.1" 200 1877
+INFO 2023-09-26 15:55:24,673 basehttp 17628 14996 "GET /app_3/random_number/70/ HTTP/1.1" 200 1879
+INFO 2023-09-26 15:55:28,489 basehttp 17628 14996 "GET /app_3/random_number/700/ HTTP/1.1" 200 11920
+INFO 2023-09-26 15:55:35,915 basehttp 17628 14996 "GET /app_3/random_number/7000/ HTTP/1.1" 200 112248
+INFO 2023-09-26 15:56:00,584 basehttp 17628 14996 "GET /app_3/random_number/700/ HTTP/1.1" 200 11914
+INFO 2023-09-26 17:19:58,658 autoreload 17628 17496 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\models.py changed, reloading.
+INFO 2023-09-26 17:20:00,171 autoreload 23052 14448 Watching for file changes with StatReloader
+INFO 2023-09-26 17:21:11,798 autoreload 23052 14448 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\models.py changed, reloading.
+INFO 2023-09-26 17:21:12,923 autoreload 25828 4976 Watching for file changes with StatReloader
+INFO 2023-09-26 17:31:05,978 autoreload 25828 4976 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 17:31:07,200 autoreload 15244 1912 Watching for file changes with StatReloader
+INFO 2023-09-26 18:01:37,661 autoreload 15244 1912 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\urls.py changed, reloading.
+INFO 2023-09-26 18:01:38,605 autoreload 11068 25472 Watching for file changes with StatReloader
+ERROR 2023-09-26 18:02:23,127 log 11068 23684 Internal Server Error: /app_3/authors_articles/21/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: my_test_app_3_autor
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 21, in authors_articles
+    author = get_object_or_404(models.Autor, pk=id_author).first()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: my_test_app_3_autor
+ERROR 2023-09-26 18:02:23,139 basehttp 11068 23684 "GET /app_3/authors_articles/21/ HTTP/1.1" 500 141734
+INFO 2023-09-26 18:03:21,375 autoreload 14148 22092 Watching for file changes with StatReloader
+WARNING 2023-09-26 18:03:30,867 log 14148 12404 Not Found: /app_3/authors_articles/21/
+WARNING 2023-09-26 18:03:30,868 basehttp 14148 12404 "GET /app_3/authors_articles/21/ HTTP/1.1" 404 3740
+WARNING 2023-09-26 18:03:42,436 log 14148 12404 Not Found: /app_3/authors_articles/11/
+WARNING 2023-09-26 18:03:42,437 basehttp 14148 12404 "GET /app_3/authors_articles/11/ HTTP/1.1" 404 3740
+INFO 2023-09-26 18:07:14,813 autoreload 14148 22092 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_2\views.py changed, reloading.
+INFO 2023-09-26 18:07:15,774 autoreload 14608 10612 Watching for file changes with StatReloader
+INFO 2023-09-26 18:08:19,779 autoreload 14608 10612 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_2\views.py changed, reloading.
+INFO 2023-09-26 18:08:20,714 autoreload 17172 16128 Watching for file changes with StatReloader
+INFO 2023-09-26 18:09:14,514 basehttp 17172 12936 "GET /app_2/create_p/ HTTP/1.1" 200 9
+INFO 2023-09-26 18:10:44,916 autoreload 17172 16128 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 18:10:46,169 autoreload 26940 24492 Watching for file changes with StatReloader
+INFO 2023-09-26 18:11:19,152 autoreload 26940 24492 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 18:11:20,071 autoreload 2376 15504 Watching for file changes with StatReloader
+ERROR 2023-09-26 18:11:43,602 log 2376 10588 Internal Server Error: /app_3/b/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 22, in create_publication
+    biography='biography' * (i * 100), birthday=datetime.date(1988, 8, 1 + i), )
+                                                ^^^^^^^^
+NameError: name 'datetime' is not defined
+ERROR 2023-09-26 18:11:43,606 basehttp 2376 10588 "GET /app_3/b/ HTTP/1.1" 500 70193
+INFO 2023-09-26 18:12:26,910 autoreload 2376 15504 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\urls.py changed, reloading.
+INFO 2023-09-26 18:12:28,095 autoreload 25696 20180 Watching for file changes with StatReloader
+ERROR 2023-09-26 18:12:33,268 log 25696 15164 Internal Server Error: /app_3/create_publication/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 22, in create_publication
+    biography='biography' * (i * 100), birthday=datetime.date(1988, 8, 1 + i), )
+                                                ^^^^^^^^
+NameError: name 'datetime' is not defined
+ERROR 2023-09-26 18:12:33,271 basehttp 25696 15164 "GET /app_3/create_publication/ HTTP/1.1" 500 70363
+INFO 2023-09-26 18:13:07,624 autoreload 25696 20180 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 18:13:08,720 autoreload 904 23652 Watching for file changes with StatReloader
+ERROR 2023-09-26 18:13:10,997 log 904 1180 Internal Server Error: /app_3/create_publication/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 25, in create_publication
+    publication = models.Publication(heading='head' * j + (str(j) * 3),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Publication() got unexpected keyword arguments: 'autor'
+ERROR 2023-09-26 18:13:11,001 basehttp 904 1180 "GET /app_3/create_publication/ HTTP/1.1" 500 77867
+INFO 2023-09-26 18:16:49,290 autoreload 904 23652 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 18:16:50,420 autoreload 18040 9124 Watching for file changes with StatReloader
+INFO 2023-09-26 18:16:52,677 basehttp 18040 27416 "GET /app_3/create_publication/ HTTP/1.1" 200 9
+INFO 2023-09-26 18:17:18,986 basehttp 18040 27416 "GET /app_3/create_publication/ HTTP/1.1" 200 9
+INFO 2023-09-26 18:17:20,722 basehttp 18040 27416 "GET /app_3/create_publication/ HTTP/1.1" 200 9
+ERROR 2023-09-26 18:18:42,992 log 18040 27416 Internal Server Error: /app_3/authors_articles/6/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 34, in authors_articles
+    author = get_object_or_404(models.Autor, pk=id_author).first()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Autor' object has no attribute 'first'
+ERROR 2023-09-26 18:18:42,997 basehttp 18040 27416 "GET /app_3/authors_articles/6/ HTTP/1.1" 500 70325
+ERROR 2023-09-26 18:19:04,340 log 18040 27416 Internal Server Error: /app_3/authors_articles/1/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 34, in authors_articles
+    author = get_object_or_404(models.Autor, pk=id_author).first()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Autor' object has no attribute 'first'
+ERROR 2023-09-26 18:19:04,343 basehttp 18040 27416 "GET /app_3/authors_articles/1/ HTTP/1.1" 500 70325
+INFO 2023-09-26 18:19:33,009 autoreload 18040 9124 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 18:19:34,059 autoreload 22428 16884 Watching for file changes with StatReloader
+ERROR 2023-09-26 18:19:35,342 log 22428 15948 Internal Server Error: /app_3/authors_articles/1/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 35, in authors_articles
+    publications = get_object_or_404(models.Publication, autor=author)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\query.py", line 1426, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\query.py", line 1236, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'autor' into field. Choices are: author, author_id, category, comment, content, count_views, heading, id, publication_date, publish_flag
+ERROR 2023-09-26 18:19:35,350 basehttp 22428 15948 "GET /app_3/authors_articles/1/ HTTP/1.1" 500 129396
+INFO 2023-09-26 18:21:38,010 autoreload 22428 16884 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 18:21:39,108 autoreload 14228 9056 Watching for file changes with StatReloader
+WARNING 2023-09-26 18:21:41,260 log 14228 17288 Not Found: /app_3/authors_articles/1/
+WARNING 2023-09-26 18:21:41,261 basehttp 14228 17288 "GET /app_3/authors_articles/1/ HTTP/1.1" 404 3743
+ERROR 2023-09-26 18:21:48,732 log 14228 17288 Internal Server Error: /app_3/authors_articles/10/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 35, in authors_articles
+    publications = get_object_or_404(models.Publication, author=author)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+my_test_app_3.models.Publication.MultipleObjectsReturned: get() returned more than one Publication -- it returned 5!
+ERROR 2023-09-26 18:21:48,738 basehttp 14228 17288 "GET /app_3/authors_articles/10/ HTTP/1.1" 500 83091
+INFO 2023-09-26 18:23:30,072 autoreload 14228 9056 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 18:23:31,152 autoreload 14036 11096 Watching for file changes with StatReloader
+ERROR 2023-09-26 18:23:33,428 log 14036 23208 Internal Server Error: /app_3/authors_articles/10/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'endfor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 37, in authors_articles
+    return render(request, 'my_test_app_3/task_4.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\defaulttags.py", line 967, in do_if
+    nodelist = parser.parse(("endif",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 17: 'endfor', expected 'endif'. Did you forget to register or load this tag?
+ERROR 2023-09-26 18:23:33,448 basehttp 14036 23208 "GET /app_3/authors_articles/10/ HTTP/1.1" 500 203636
+INFO 2023-09-26 18:24:13,845 basehttp 14036 23208 "GET /app_3/authors_articles/10/ HTTP/1.1" 200 1011
+ERROR 2023-09-26 18:25:23,517 log 14036 23208 Internal Server Error: /app_3/authors_articles/10/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 37, in authors_articles
+    return render(request, 'my_test_app_3/task_4.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\defaulttags.py", line 952, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\smartif.py", line 194, in parse
+    retval = self.expression()
+             ^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\smartif.py", line 205, in expression
+    left = t.nud(self)
+           ^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\smartif.py", line 23, in nud
+    raise parser.error_class(
+django.template.exceptions.TemplateSyntaxError: Not expecting 'not in' in this position in if tag.
+ERROR 2023-09-26 18:25:23,530 basehttp 14036 23208 "GET /app_3/authors_articles/10/ HTTP/1.1" 500 206860
+INFO 2023-09-26 18:25:47,572 basehttp 14036 23208 "GET /app_3/authors_articles/10/ HTTP/1.1" 200 1201
+ERROR 2023-09-26 18:25:54,902 log 14036 23208 Internal Server Error: /app_3/article/42/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: article() got an unexpected keyword argument 'id_publ'
+ERROR 2023-09-26 18:25:54,905 basehttp 14036 23208 "GET /app_3/article/42/ HTTP/1.1" 500 66407
+INFO 2023-09-26 18:29:24,173 autoreload 14036 11096 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\urls.py changed, reloading.
+INFO 2023-09-26 18:29:25,433 autoreload 17040 26840 Watching for file changes with StatReloader
+INFO 2023-09-26 18:29:31,687 basehttp 17040 22392 "GET /app_3/article/42/ HTTP/1.1" 200 837
+INFO 2023-09-26 18:31:41,576 basehttp 17040 22392 "GET /app_3/authors_articles/10/ HTTP/1.1" 200 1216
+INFO 2023-09-26 18:32:10,668 basehttp 17040 22392 "GET /app_3/authors_articles/10/ HTTP/1.1" 200 1201
+INFO 2023-09-26 18:32:44,951 basehttp 17040 22392 "GET /app_3/authors_articles/10/ HTTP/1.1" 200 1189
+INFO 2023-09-26 18:33:42,861 basehttp 17040 22392 "GET /app_3/authors_articles/10/ HTTP/1.1" 200 1134
+INFO 2023-09-26 18:34:57,277 basehttp 17040 22392 "GET /app_3/authors_articles/10/ HTTP/1.1" 200 1184
+INFO 2023-09-26 18:35:14,414 basehttp 17040 22392 "GET /app_3/authors_articles/10/ HTTP/1.1" 200 1164
+INFO 2023-09-26 18:38:44,968 basehttp 17040 22392 "GET /app_3/authors_articles/10/ HTTP/1.1" 200 1164
+INFO 2023-09-26 18:40:27,353 basehttp 17040 22392 "GET /app_3/authors_articles/10/ HTTP/1.1" 200 994
+INFO 2023-09-26 18:41:56,090 basehttp 17040 22392 "GET /app_3/authors_articles/10/ HTTP/1.1" 200 879
+INFO 2023-09-26 18:42:14,469 basehttp 17040 22392 "GET /app_3/authors_articles/10/ HTTP/1.1" 200 879
+INFO 2023-09-26 18:42:39,772 basehttp 17040 22392 "GET /app_3/authors_articles/10/ HTTP/1.1" 200 1129
+INFO 2023-09-26 18:42:51,937 basehttp 17040 22392 "GET /app_3/article/42/ HTTP/1.1" 200 837
+INFO 2023-09-26 18:42:55,216 basehttp 17040 22392 "GET /app_3/article/44/ HTTP/1.1" 200 985
+INFO 2023-09-26 18:43:39,725 basehttp 17040 22392 "GET /app_3/authors_articles/10/ HTTP/1.1" 200 829
+INFO 2023-09-26 18:44:56,046 basehttp 17040 22392 "GET /app_3/authors_articles/10/ HTTP/1.1" 200 829
+INFO 2023-09-26 18:44:57,899 basehttp 17040 22392 "GET /app_3/authors_articles/10/ HTTP/1.1" 200 829
+INFO 2023-09-26 18:45:40,336 basehttp 17040 22392 "GET /app_3/authors_articles/10/ HTTP/1.1" 200 994
+INFO 2023-09-26 18:45:54,978 basehttp 17040 22392 "GET /app_3/authors_articles/10/ HTTP/1.1" 200 994
+INFO 2023-09-26 18:45:57,311 basehttp 17040 22392 "GET /app_3/authors_articles/10/ HTTP/1.1" 200 994
+INFO 2023-09-26 18:46:10,369 basehttp 17040 22392 "GET /app_3/authors_articles/10/ HTTP/1.1" 200 994
+INFO 2023-09-26 18:46:33,603 basehttp 17040 22392 "GET /app_3/authors_articles/10/ HTTP/1.1" 200 1009
+INFO 2023-09-26 18:46:59,062 basehttp 17040 22392 "GET /app_3/authors_articles/10/ HTTP/1.1" 200 974
+INFO 2023-09-26 18:47:31,571 basehttp 17040 22392 "GET /app_3/authors_articles/10/ HTTP/1.1" 200 994
+INFO 2023-09-26 19:58:49,496 autoreload 17040 26840 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 19:58:51,058 autoreload 26544 14812 Watching for file changes with StatReloader
+INFO 2023-09-26 20:09:38,598 autoreload 26544 14812 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 20:09:40,856 autoreload 24272 9448 Watching for file changes with StatReloader
+INFO 2023-09-26 20:15:44,675 autoreload 24272 9448 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\urls.py changed, reloading.
+INFO 2023-09-26 20:15:45,701 autoreload 25632 18268 Watching for file changes with StatReloader
+ERROR 2023-09-26 20:15:59,344 log 25632 18692 Internal Server Error: /app_3/article_full_info/10/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 37, in article_full_info
+    render(request, 'my_test_app_3/task_5.html', {'pub': publication})
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' - 1' from 'pub.count_views - 1'
+ERROR 2023-09-26 20:15:59,355 basehttp 25632 18692 "GET /app_3/article_full_info/10/ HTTP/1.1" 500 177644
+ERROR 2023-09-26 20:16:46,780 log 25632 18692 Internal Server Error: /app_3/article_full_info/10/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 37, in article_full_info
+    render(request, 'my_test_app_3/task_5.html', {'pub': publication})
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '-1' from 'pub.count_views-1'
+ERROR 2023-09-26 20:16:46,795 basehttp 25632 18692 "GET /app_3/article_full_info/10/ HTTP/1.1" 500 177737
+INFO 2023-09-26 20:19:30,225 autoreload 25632 18268 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 20:19:31,355 autoreload 18976 13520 Watching for file changes with StatReloader
+ERROR 2023-09-26 20:19:33,613 log 18976 20488 Internal Server Error: /app_3/article_full_info/10/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 38, in article_full_info
+    render(request, 'my_test_app_3/task_5.html', {'pub': publication})
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '-1' from 'pub.count_views-1'
+ERROR 2023-09-26 20:19:33,626 basehttp 18976 20488 "GET /app_3/article_full_info/10/ HTTP/1.1" 500 178023
+ERROR 2023-09-26 20:19:50,933 log 18976 20488 Internal Server Error: /app_3/article_full_info/10/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view my_test_app_3.views.article_full_info didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-09-26 20:19:50,938 basehttp 18976 20488 "GET /app_3/article_full_info/10/ HTTP/1.1" 500 71094
+INFO 2023-09-26 20:21:24,191 autoreload 18976 13520 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 20:21:25,342 autoreload 9824 26912 Watching for file changes with StatReloader
+ERROR 2023-09-26 20:21:27,503 log 9824 20484 Internal Server Error: /app_3/article_full_info/10/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view my_test_app_3.views.article_full_info didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-09-26 20:21:27,506 basehttp 9824 20484 "GET /app_3/article_full_info/10/ HTTP/1.1" 500 71094
+INFO 2023-09-26 20:23:51,183 basehttp 9824 20484 "GET /app_3/authors_articles/10/ HTTP/1.1" 200 994
+INFO 2023-09-26 20:24:12,310 basehttp 9824 20484 "GET /app_3/authors_articles/10/ HTTP/1.1" 200 1164
+INFO 2023-09-26 20:24:14,212 basehttp 9824 20484 "GET /app_3/article/43/ HTTP/1.1" 200 1314
+INFO 2023-09-26 20:27:15,806 autoreload 9824 26912 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 20:27:17,223 autoreload 21576 26640 Watching for file changes with StatReloader
+WARNING 2023-09-26 20:27:27,420 log 21576 18068 Not Found: /app_3/
+WARNING 2023-09-26 20:27:27,422 basehttp 21576 18068 "GET /app_3/ HTTP/1.1" 404 4134
+INFO 2023-09-26 20:27:36,171 basehttp 21576 18068 "GET /app_3/article_full_info/10/ HTTP/1.1" 200 1311
+INFO 2023-09-26 20:27:48,035 basehttp 21576 18068 "GET /app_3/article_full_info/10/ HTTP/1.1" 200 1311
+INFO 2023-09-26 20:27:49,182 basehttp 21576 18068 "GET /app_3/article_full_info/10/ HTTP/1.1" 200 1311
+INFO 2023-09-26 20:27:50,115 basehttp 21576 18068 "GET /app_3/article_full_info/10/ HTTP/1.1" 200 1311
+INFO 2023-09-26 20:27:51,501 basehttp 21576 18068 "GET /app_3/article_full_info/10/ HTTP/1.1" 200 1311
+INFO 2023-09-26 20:27:52,615 basehttp 21576 18068 "GET /app_3/article_full_info/10/ HTTP/1.1" 200 1311
+INFO 2023-09-26 20:27:53,985 basehttp 21576 18068 "GET /app_3/article_full_info/10/ HTTP/1.1" 200 1311
+INFO 2023-09-26 20:28:06,794 autoreload 21576 26640 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 20:28:07,749 autoreload 17108 18512 Watching for file changes with StatReloader
+INFO 2023-09-26 20:28:09,001 basehttp 17108 18296 "GET /app_3/article_full_info/10/ HTTP/1.1" 200 1311
+INFO 2023-09-26 20:28:12,216 basehttp 17108 18296 "GET /app_3/article_full_info/10/ HTTP/1.1" 200 1311
+INFO 2023-09-26 20:28:15,106 basehttp 17108 18296 "GET /app_3/article_full_info/10/ HTTP/1.1" 200 1311
+INFO 2023-09-26 20:28:17,284 basehttp 17108 18296 "GET /app_3/article_full_info/10/ HTTP/1.1" 200 1311
+INFO 2023-09-26 20:28:18,846 basehttp 17108 18296 "GET /app_3/article_full_info/10/ HTTP/1.1" 200 1311
+INFO 2023-09-26 20:28:20,516 basehttp 17108 18296 "GET /app_3/article_full_info/10/ HTTP/1.1" 200 1311
+INFO 2023-09-26 20:29:19,840 basehttp 17108 18296 "GET /app_3/article_full_info/10/ HTTP/1.1" 200 1312
+INFO 2023-09-26 20:37:22,023 autoreload 17108 18512 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 20:37:22,952 autoreload 15308 14792 Watching for file changes with StatReloader
+INFO 2023-09-26 20:39:28,961 autoreload 15308 14792 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 20:39:30,264 autoreload 14844 11200 Watching for file changes with StatReloader
+INFO 2023-09-26 20:40:24,197 autoreload 14844 11200 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 20:40:25,353 autoreload 10408 21756 Watching for file changes with StatReloader
+INFO 2023-09-26 20:41:19,930 autoreload 10408 21756 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 20:41:20,953 autoreload 2224 13264 Watching for file changes with StatReloader
+WARNING 2023-09-26 20:41:27,598 log 2224 24540 Not Found: /app_3/create_publication/
+WARNING 2023-09-26 20:41:27,599 basehttp 2224 24540 "GET /app_3/create_publication/ HTTP/1.1" 404 4142
+INFO 2023-09-26 20:42:47,283 autoreload 2224 13264 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 20:42:48,342 autoreload 7896 14884 Watching for file changes with StatReloader
+INFO 2023-09-26 20:42:56,323 basehttp 7896 19596 "GET /app_3/create_publication/ HTTP/1.1" 200 9
+INFO 2023-09-26 20:43:26,341 autoreload 7896 14884 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 20:43:27,727 autoreload 636 16116 Watching for file changes with StatReloader
+WARNING 2023-09-26 20:43:28,919 log 636 12800 Not Found: /app_3/create_publication/
+WARNING 2023-09-26 20:43:28,920 basehttp 636 12800 "GET /app_3/create_publication/ HTTP/1.1" 404 4142
+WARNING 2023-09-26 20:43:51,115 log 636 12800 Not Found: /app_3/create_publication/
+WARNING 2023-09-26 20:43:51,117 basehttp 636 12800 "GET /app_3/create_publication/ HTTP/1.1" 404 4142
+INFO 2023-09-26 20:44:56,571 autoreload 636 16116 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 20:44:57,613 autoreload 26036 2156 Watching for file changes with StatReloader
+WARNING 2023-09-26 20:44:58,751 log 26036 25560 Not Found: /app_3/create_publication/
+WARNING 2023-09-26 20:44:58,752 basehttp 26036 25560 "GET /app_3/create_publication/ HTTP/1.1" 404 4142
+INFO 2023-09-26 20:45:48,100 autoreload 26036 2156 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 20:45:49,190 autoreload 15244 5528 Watching for file changes with StatReloader
+INFO 2023-09-26 20:47:08,833 autoreload 15244 5528 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 20:47:09,976 autoreload 14408 9972 Watching for file changes with StatReloader
+ERROR 2023-09-26 20:47:11,357 log 14408 7460 Internal Server Error: /app_3/create_publication/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 25, in create_publication
+    comment = models.Comment(author=get_object_or_404(models.Autor, pk=b), publication=i,
+                                                                       ^
+NameError: name 'b' is not defined
+ERROR 2023-09-26 20:47:11,360 basehttp 14408 7460 "GET /app_3/create_publication/ HTTP/1.1" 500 72438
+INFO 2023-09-26 20:47:22,797 autoreload 14408 9972 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 20:47:23,808 autoreload 5304 19820 Watching for file changes with StatReloader
+INFO 2023-09-26 20:47:25,298 basehttp 5304 18620 "GET /app_3/create_publication/ HTTP/1.1" 200 9
+INFO 2023-09-26 20:47:38,777 autoreload 5304 19820 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 20:47:39,842 autoreload 19220 16528 Watching for file changes with StatReloader
+ERROR 2023-09-26 20:47:41,193 log 19220 20176 Internal Server Error: /app_3/create_publication/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 31, in create_publication
+    comment.save()
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1821, in execute_sql
+    for sql, params in self.as_sql():
+                       ^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1745, in as_sql
+    value_rows = [
+                 ^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1746, in <listcomp>
+    [
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1747, in <listcomp>
+    self.prepare_value(field, self.pre_save_val(field, obj))
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1686, in prepare_value
+    return field.get_db_prep_save(value, connection=self.connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 954, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1607, in get_db_prep_value
+    value = self.get_prep_value(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1585, in get_prep_value
+    value = super().get_prep_value(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1464, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1546, in to_python
+    parsed = parse_datetime(value)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\utils\dateparse.py", line 114, in parse_datetime
+    return datetime.datetime.fromisoformat(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: fromisoformat: argument must be str
+ERROR 2023-09-26 20:47:41,207 basehttp 19220 20176 "GET /app_3/create_publication/ HTTP/1.1" 500 153302
+INFO 2023-09-26 20:48:42,316 autoreload 19220 16528 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 20:48:43,314 autoreload 26852 6772 Watching for file changes with StatReloader
+INFO 2023-09-26 20:49:31,601 autoreload 26852 6772 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\models.py changed, reloading.
+INFO 2023-09-26 20:49:32,547 autoreload 17752 7924 Watching for file changes with StatReloader
+INFO 2023-09-26 20:50:40,713 autoreload 20176 12800 Watching for file changes with StatReloader
+INFO 2023-09-26 20:50:47,485 basehttp 20176 24484 "GET /app_3/create_publication/ HTTP/1.1" 200 9
+INFO 2023-09-26 20:56:25,806 autoreload 20176 12800 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 20:56:26,736 autoreload 18616 13864 Watching for file changes with StatReloader
+INFO 2023-09-26 20:57:04,388 basehttp 18616 18624 "GET /app_3/create_publication/ HTTP/1.1" 200 9
+INFO 2023-09-26 21:02:43,957 autoreload 18616 13864 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-26 21:02:44,984 autoreload 13252 14408 Watching for file changes with StatReloader
+INFO 2023-09-26 21:11:29,456 basehttp 13252 7196 "GET /app_3/authors_articles/10/ HTTP/1.1" 200 994
+INFO 2023-09-26 21:11:52,625 basehttp 13252 7196 "GET /app_3/authors_articles/10/ HTTP/1.1" 200 1164
+INFO 2023-09-26 21:11:53,881 basehttp 13252 7196 "GET /app_3/article/42/ HTTP/1.1" 200 1777
+INFO 2023-09-26 21:12:36,409 basehttp 13252 7196 "GET /app_3/article/42/ HTTP/1.1" 200 1800
+INFO 2023-09-27 09:43:44,686 autoreload 13252 14408 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 09:43:46,768 autoreload 10556 10136 Watching for file changes with StatReloader
+INFO 2023-09-27 09:57:53,039 autoreload 10556 10136 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 09:57:54,463 autoreload 24468 4976 Watching for file changes with StatReloader
+INFO 2023-09-27 09:59:13,005 autoreload 24468 4976 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 09:59:14,067 autoreload 18228 884 Watching for file changes with StatReloader
+INFO 2023-09-27 10:10:05,805 autoreload 18228 884 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 10:10:06,947 autoreload 28416 9772 Watching for file changes with StatReloader
+INFO 2023-09-27 10:15:35,517 autoreload 28416 9772 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 10:15:36,584 autoreload 23936 15608 Watching for file changes with StatReloader
+INFO 2023-09-27 10:28:23,980 autoreload 23936 15608 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 10:28:25,137 autoreload 23584 27348 Watching for file changes with StatReloader
+INFO 2023-09-27 10:44:11,142 autoreload 23584 27348 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 10:44:12,154 autoreload 9472 11040 Watching for file changes with StatReloader
+INFO 2023-09-27 10:46:12,157 autoreload 9472 11040 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 10:46:13,119 autoreload 12176 26192 Watching for file changes with StatReloader
+INFO 2023-09-27 10:56:00,609 autoreload 12176 26192 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 10:56:02,105 autoreload 16888 27656 Watching for file changes with StatReloader
+INFO 2023-09-27 10:58:12,591 autoreload 16888 27656 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 10:58:13,530 autoreload 20852 3472 Watching for file changes with StatReloader
+INFO 2023-09-27 11:18:52,207 autoreload 20852 3472 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 11:18:53,181 autoreload 19300 18368 Watching for file changes with StatReloader
+INFO 2023-09-27 11:19:06,382 autoreload 19300 18368 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 11:19:07,331 autoreload 6312 27968 Watching for file changes with StatReloader
+INFO 2023-09-27 11:19:19,788 autoreload 6312 27968 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 11:19:20,733 autoreload 8452 21760 Watching for file changes with StatReloader
+INFO 2023-09-27 11:19:47,184 autoreload 8452 21760 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 11:19:48,074 autoreload 26980 164 Watching for file changes with StatReloader
+INFO 2023-09-27 11:20:01,191 autoreload 21384 23816 Watching for file changes with StatReloader
+INFO 2023-09-27 11:24:47,856 autoreload 21384 23816 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\models.py changed, reloading.
+INFO 2023-09-27 11:24:48,725 autoreload 6312 26136 Watching for file changes with StatReloader
+INFO 2023-09-27 11:26:29,120 autoreload 6312 26136 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 11:26:30,055 autoreload 17416 12636 Watching for file changes with StatReloader
+INFO 2023-09-27 11:27:33,078 autoreload 13932 20444 Watching for file changes with StatReloader
+INFO 2023-09-27 11:30:01,219 autoreload 13932 20444 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 11:30:02,726 autoreload 10628 26292 Watching for file changes with StatReloader
+INFO 2023-09-27 11:30:17,398 basehttp 10628 14140 "GET /app_3/main_site/ HTTP/1.1" 200 845
+INFO 2023-09-27 11:30:26,949 basehttp 10628 14140 "GET /app_3/create_publication/ HTTP/1.1" 200 9
+INFO 2023-09-27 11:35:20,999 autoreload 10628 26292 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 11:35:22,163 autoreload 26956 26408 Watching for file changes with StatReloader
+INFO 2023-09-27 11:35:23,526 basehttp 26956 10136 "GET /app_3/create_publication/ HTTP/1.1" 200 9
+INFO 2023-09-27 11:53:43,394 autoreload 26956 26408 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 11:53:45,033 autoreload 20700 19768 Watching for file changes with StatReloader
+INFO 2023-09-27 11:59:02,612 autoreload 20700 19768 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\models.py changed, reloading.
+INFO 2023-09-27 11:59:04,044 autoreload 13408 2164 Watching for file changes with StatReloader
+INFO 2023-09-27 11:59:09,395 basehttp 13408 22860 "GET /app_3/create_publication/ HTTP/1.1" 200 9
+INFO 2023-09-27 11:59:30,546 autoreload 13408 2164 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 11:59:32,039 autoreload 22092 23068 Watching for file changes with StatReloader
+INFO 2023-09-27 11:59:33,459 basehttp 22092 10200 "GET /app_3/create_publication/ HTTP/1.1" 200 9
+INFO 2023-09-27 12:00:03,975 autoreload 22092 23068 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 12:00:05,023 autoreload 6124 12948 Watching for file changes with StatReloader
+INFO 2023-09-27 12:02:11,714 autoreload 6124 12948 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\models.py changed, reloading.
+INFO 2023-09-27 12:02:12,819 autoreload 11600 2600 Watching for file changes with StatReloader
+INFO 2023-09-27 12:02:21,470 basehttp 11600 17668 "GET /app_3/customer_orders/1 HTTP/1.1" 301 0
+INFO 2023-09-27 12:02:21,510 basehttp 11600 8660 "GET /app_3/customer_orders/1/ HTTP/1.1" 200 871
+INFO 2023-09-27 12:02:37,908 basehttp 11600 8660 "GET /app_3/customer_orders/2/ HTTP/1.1" 200 997
+INFO 2023-09-27 12:06:18,600 autoreload 11600 2600 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 12:06:19,911 autoreload 9912 26792 Watching for file changes with StatReloader
+INFO 2023-09-27 12:06:21,285 basehttp 9912 26016 "GET /app_3/order_products/2/ HTTP/1.1" 200 831
+INFO 2023-09-27 12:06:24,513 basehttp 9912 26016 "GET /app_3/order_products/3/ HTTP/1.1" 200 832
+INFO 2023-09-27 12:06:31,350 basehttp 9912 26016 "GET /app_3/order_products/2/ HTTP/1.1" 200 831
+INFO 2023-09-27 12:06:35,284 basehttp 9912 26016 "GET /app_3/order_products/3/ HTTP/1.1" 200 832
+INFO 2023-09-27 12:06:39,113 basehttp 9912 26016 "GET /app_3/order_products/2/ HTTP/1.1" 200 831
+INFO 2023-09-27 12:07:29,369 basehttp 9912 26016 "GET /app_3/customer_orders/2/ HTTP/1.1" 200 997
+INFO 2023-09-27 12:07:31,072 basehttp 9912 26016 "GET /app_3/order_products/2/ HTTP/1.1" 200 843
+INFO 2023-09-27 12:16:24,086 autoreload 9912 26792 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\urls.py changed, reloading.
+INFO 2023-09-27 12:16:25,054 autoreload 8488 12772 Watching for file changes with StatReloader
+ERROR 2023-09-27 12:16:40,670 log 8488 6680 Internal Server Error: /app_3/customer_all_products/2/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view my_test_app_3.views.customer_all_products didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-09-27 12:16:40,673 basehttp 8488 6680 "GET /app_3/customer_all_products/2/ HTTP/1.1" 500 71016
+INFO 2023-09-27 12:17:29,153 autoreload 8488 12772 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 12:17:30,195 autoreload 11040 21492 Watching for file changes with StatReloader
+ERROR 2023-09-27 12:17:31,394 log 11040 13212 Internal Server Error: /app_3/customer_all_products/2/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view my_test_app_3.views.customer_all_products didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-09-27 12:17:31,398 basehttp 11040 13212 "GET /app_3/customer_all_products/2/ HTTP/1.1" 500 71153
+INFO 2023-09-27 12:19:32,794 autoreload 11040 21492 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 12:19:33,887 autoreload 23996 1152 Watching for file changes with StatReloader
+ERROR 2023-09-27 12:19:35,061 log 23996 26912 Internal Server Error: /app_3/customer_all_products/2/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view my_test_app_3.views.customer_all_products didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-09-27 12:19:35,064 basehttp 23996 26912 "GET /app_3/customer_all_products/2/ HTTP/1.1" 500 71153
+INFO 2023-09-27 12:21:26,782 autoreload 23996 1152 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 12:21:27,689 autoreload 884 25108 Watching for file changes with StatReloader
+INFO 2023-09-27 12:22:45,767 autoreload 884 25108 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 12:22:46,801 autoreload 14812 14992 Watching for file changes with StatReloader
+INFO 2023-09-27 12:25:45,073 autoreload 14812 14992 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 12:25:46,020 autoreload 23820 18264 Watching for file changes with StatReloader
+ERROR 2023-09-27 12:27:27,501 log 23820 18304 Internal Server Error: /app_3/customer_all_products/2/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view my_test_app_3.views.customer_all_products didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-09-27 12:27:27,505 basehttp 23820 18304 "GET /app_3/customer_all_products/2/ HTTP/1.1" 500 71153
+INFO 2023-09-27 12:28:33,479 autoreload 23820 18264 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 12:28:34,553 autoreload 13112 19560 Watching for file changes with StatReloader
+ERROR 2023-09-27 12:28:35,701 log 13112 19444 Internal Server Error: /app_3/customer_all_products/2/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view my_test_app_3.views.customer_all_products didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-09-27 12:28:35,704 basehttp 13112 19444 "GET /app_3/customer_all_products/2/ HTTP/1.1" 500 71153
+INFO 2023-09-27 12:35:15,199 autoreload 13112 19560 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 12:35:16,248 autoreload 4828 7764 Watching for file changes with StatReloader
+INFO 2023-09-27 12:39:12,917 autoreload 4828 7764 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 12:39:14,014 autoreload 13932 10836 Watching for file changes with StatReloader
+INFO 2023-09-27 12:39:15,522 basehttp 13932 11104 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 1096
+INFO 2023-09-27 12:42:41,307 basehttp 13932 11104 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 908
+INFO 2023-09-27 12:42:52,805 basehttp 13932 11104 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 908
+INFO 2023-09-27 12:42:53,858 basehttp 13932 11104 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 908
+INFO 2023-09-27 12:42:54,312 basehttp 13932 11104 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 908
+INFO 2023-09-27 12:43:13,490 basehttp 13932 11104 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 908
+INFO 2023-09-27 12:43:14,100 basehttp 13932 11104 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 908
+INFO 2023-09-27 12:43:14,407 basehttp 13932 11104 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 908
+INFO 2023-09-27 12:43:15,213 basehttp 13932 11104 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 908
+INFO 2023-09-27 12:44:25,788 basehttp 13932 11104 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 974
+INFO 2023-09-27 12:45:56,840 basehttp 13932 11104 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 927
+INFO 2023-09-27 12:46:12,807 basehttp 13932 11104 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 985
+INFO 2023-09-27 12:49:31,223 basehttp 13932 11104 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 1063
+INFO 2023-09-27 13:05:04,116 basehttp 13932 22604 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 1065
+INFO 2023-09-27 13:05:50,303 basehttp 13932 22604 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 1093
+INFO 2023-09-27 13:07:37,763 basehttp 13932 22604 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 1102
+INFO 2023-09-27 13:08:05,231 basehttp 13932 22604 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 1102
+INFO 2023-09-27 13:13:04,669 autoreload 13932 10836 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 13:13:05,910 autoreload 9024 14456 Watching for file changes with StatReloader
+INFO 2023-09-27 13:24:03,371 autoreload 9024 14456 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 13:24:04,347 autoreload 20208 16672 Watching for file changes with StatReloader
+INFO 2023-09-27 13:26:06,698 autoreload 20208 16672 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 13:26:07,799 autoreload 27572 27300 Watching for file changes with StatReloader
+INFO 2023-09-27 13:41:26,041 autoreload 27572 27300 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 13:41:27,016 autoreload 4660 22288 Watching for file changes with StatReloader
+INFO 2023-09-27 13:41:47,090 autoreload 4660 22288 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 13:41:48,747 autoreload 27908 22708 Watching for file changes with StatReloader
+INFO 2023-09-27 13:47:36,190 autoreload 27908 22708 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 13:47:37,232 autoreload 5856 12608 Watching for file changes with StatReloader
+ERROR 2023-09-27 13:47:39,897 log 5856 25468 Internal Server Error: /app_3/customer_all_products/2/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 53, in customer_all_products
+    return render(request, 'my_test_app_3/home_work.html', {'list_products': list_products, 'id_customer': id_customer})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 24: 'endblock', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2023-09-27 13:47:39,916 basehttp 5856 25468 "GET /app_3/customer_all_products/2/ HTTP/1.1" 500 187855
+ERROR 2023-09-27 13:48:16,797 log 5856 25468 Internal Server Error: /app_3/customer_all_products/2/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 53, in customer_all_products
+    return render(request, 'my_test_app_3/home_work.html', {'list_products': list_products, 'id_customer': id_customer})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 22: 'endblock', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2023-09-27 13:48:16,819 basehttp 5856 25468 "GET /app_3/customer_all_products/2/ HTTP/1.1" 500 189531
+INFO 2023-09-27 13:48:33,519 basehttp 5856 25468 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 1329
+INFO 2023-09-27 13:49:21,780 basehttp 5856 25468 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 1341
+INFO 2023-09-27 13:49:23,192 basehttp 5856 25468 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 1341
+INFO 2023-09-27 13:49:23,781 basehttp 5856 25468 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 1341
+INFO 2023-09-27 13:49:58,373 basehttp 5856 25468 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 1345
+INFO 2023-09-27 13:50:20,263 basehttp 5856 25468 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 1369
+INFO 2023-09-27 13:50:40,423 basehttp 5856 25468 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 1369
+INFO 2023-09-27 14:01:25,912 basehttp 5856 21988 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 1405
+INFO 2023-09-27 14:03:51,386 basehttp 5856 21988 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 1409
+INFO 2023-09-27 14:05:38,066 basehttp 5856 21988 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 1385
+ERROR 2023-09-27 14:10:44,849 log 5856 27448 Internal Server Error: /app_3/customer_all_products/2/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 53, in customer_all_products
+    return render(request, 'my_test_app_3/home_work.html', {'list_products': list_products, 'id_customer': id_customer})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '' not found. '' is not a valid view function or pattern name.
+ERROR 2023-09-27 14:10:44,867 basehttp 5856 27448 "GET /app_3/customer_all_products/2/ HTTP/1.1" 500 171280
+ERROR 2023-09-27 14:10:46,698 log 5856 27448 Internal Server Error: /app_3/customer_all_products/2/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 53, in customer_all_products
+    return render(request, 'my_test_app_3/home_work.html', {'list_products': list_products, 'id_customer': id_customer})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '' not found. '' is not a valid view function or pattern name.
+ERROR 2023-09-27 14:10:46,707 basehttp 5856 27448 "GET /app_3/customer_all_products/2/ HTTP/1.1" 500 171280
+INFO 2023-09-27 14:11:17,408 basehttp 5856 27448 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 1370
+INFO 2023-09-27 14:12:26,538 basehttp 5856 27448 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 1426
+INFO 2023-09-27 14:13:59,812 autoreload 5856 12608 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 14:14:00,939 autoreload 24064 11008 Watching for file changes with StatReloader
+ERROR 2023-09-27 14:14:34,616 log 24064 20560 Internal Server Error: /app_3/customer_all_products/2/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 53, in customer_all_products
+    return render(request, 'my_test_app_3/home_work.html', {'list_products': list_products, 'id_customer': id_customer,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\defaulttags.py", line 1372, in url
+    viewname = parser.compile_filter(bits[1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '{{' from '{{'
+ERROR 2023-09-27 14:14:34,631 basehttp 24064 20560 "GET /app_3/customer_all_products/2/ HTTP/1.1" 500 186831
+INFO 2023-09-27 14:15:34,712 autoreload 24064 11008 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 14:15:36,099 autoreload 15428 24168 Watching for file changes with StatReloader
+ERROR 2023-09-27 14:15:38,192 log 15428 15000 Internal Server Error: /app_3/customer_all_products/2/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 53, in customer_all_products
+    return render(request, 'my_test_app_3/home_work.html', {'list_products': list_products, 'id_customer': id_customer,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\defaulttags.py", line 1372, in url
+    viewname = parser.compile_filter(bits[1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '{{' from '{{'
+ERROR 2023-09-27 14:15:38,209 basehttp 15428 15000 "GET /app_3/customer_all_products/2/ HTTP/1.1" 500 186869
+INFO 2023-09-27 14:16:23,475 autoreload 15428 24168 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 14:16:24,627 autoreload 12400 6252 Watching for file changes with StatReloader
+ERROR 2023-09-27 14:16:44,641 log 12400 21720 Internal Server Error: /app_3/customer_all_products/2/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 53, in customer_all_products
+    return render(request, 'my_test_app_3/home_work.html', {'list_products': list_products, 'id_customer': id_customer})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '' not found. '' is not a valid view function or pattern name.
+ERROR 2023-09-27 14:16:44,657 basehttp 12400 21720 "GET /app_3/customer_all_products/2/ HTTP/1.1" 500 171280
+INFO 2023-09-27 14:17:01,444 basehttp 12400 21720 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 1429
+INFO 2023-09-27 14:17:03,099 basehttp 12400 21720 "GET /app_3/customer_orders/1/ HTTP/1.1" 200 890
+INFO 2023-09-27 14:18:21,691 basehttp 12400 21720 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 1436
+INFO 2023-09-27 14:18:23,077 basehttp 12400 21720 "GET /app_3/customer_all_products/2/1 HTTP/1.1" 200 1436
+INFO 2023-09-27 14:18:26,129 basehttp 12400 21720 "GET /app_3/customer_all_products/2/1 HTTP/1.1" 200 1436
+INFO 2023-09-27 14:19:06,146 basehttp 12400 21720 "GET /app_3/customer_all_products/2/1 HTTP/1.1" 200 1570
+ERROR 2023-09-27 14:19:08,450 log 12400 21720 Internal Server Error: /app_3/customer_all_products/2/4
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 46, in customer_all_products
+    raise Exception
+Exception
+ERROR 2023-09-27 14:19:08,454 basehttp 12400 21720 "GET /app_3/customer_all_products/2/4 HTTP/1.1" 500 71026
+INFO 2023-09-27 14:19:11,543 basehttp 12400 21720 "GET /app_3/customer_all_products/2/2 HTTP/1.1" 200 1570
+INFO 2023-09-27 14:19:12,921 basehttp 12400 21720 "GET /app_3/customer_all_products/2/1 HTTP/1.1" 200 1570
+INFO 2023-09-27 14:19:13,686 basehttp 12400 21720 "GET /app_3/customer_all_products/2/2 HTTP/1.1" 200 1570
+ERROR 2023-09-27 14:19:16,350 log 12400 21720 Internal Server Error: /app_3/customer_all_products/2/4
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py", line 46, in customer_all_products
+    raise Exception
+Exception
+ERROR 2023-09-27 14:19:16,353 basehttp 12400 21720 "GET /app_3/customer_all_products/2/4 HTTP/1.1" 500 71029
+INFO 2023-09-27 14:20:53,926 autoreload 12400 6252 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 14:20:55,064 autoreload 22812 5040 Watching for file changes with StatReloader
+INFO 2023-09-27 14:20:57,206 basehttp 22812 19676 "GET /app_3/customer_all_products/2/2 HTTP/1.1" 200 1339
+INFO 2023-09-27 14:20:59,532 basehttp 22812 19676 "GET /app_3/customer_all_products/2/1 HTTP/1.1" 200 1339
+INFO 2023-09-27 14:21:00,969 basehttp 22812 19676 "GET /app_3/customer_all_products/2/2 HTTP/1.1" 200 1339
+INFO 2023-09-27 14:21:01,909 basehttp 22812 19676 "GET /app_3/customer_all_products/2/3 HTTP/1.1" 200 1570
+INFO 2023-09-27 14:21:03,504 basehttp 22812 19676 "GET /app_3/customer_all_products/2/3 HTTP/1.1" 200 1570
+INFO 2023-09-27 14:21:04,389 basehttp 22812 19676 "GET /app_3/customer_all_products/2/3 HTTP/1.1" 200 1570
+INFO 2023-09-27 14:21:06,250 basehttp 22812 19676 "GET /app_3/customer_all_products/2/1 HTTP/1.1" 200 1339
+INFO 2023-09-27 14:21:07,030 basehttp 22812 19676 "GET /app_3/customer_all_products/2/2 HTTP/1.1" 200 1339
+INFO 2023-09-27 14:21:07,900 basehttp 22812 19676 "GET /app_3/customer_all_products/2/1 HTTP/1.1" 200 1339
+INFO 2023-09-27 14:21:11,131 basehttp 22812 19676 "GET /app_3/customer_all_products/2/3 HTTP/1.1" 200 1570
+INFO 2023-09-27 14:21:30,905 autoreload 22812 5040 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 14:21:31,863 autoreload 19500 6128 Watching for file changes with StatReloader
+INFO 2023-09-27 14:22:06,900 autoreload 19500 6128 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 14:22:07,969 autoreload 22968 6300 Watching for file changes with StatReloader
+INFO 2023-09-27 14:22:09,298 basehttp 22968 16360 "GET /app_3/customer_all_products/2/1 HTTP/1.1" 200 1339
+INFO 2023-09-27 14:22:09,322 basehttp 22968 9380 "GET /app_3/customer_all_products/2/2 HTTP/1.1" 200 1570
+INFO 2023-09-27 14:22:10,105 basehttp 22968 9380 "GET /app_3/customer_all_products/2/3 HTTP/1.1" 200 1570
+INFO 2023-09-27 14:22:10,987 basehttp 22968 9380 "GET /app_3/customer_all_products/2/1 HTTP/1.1" 200 1339
+INFO 2023-09-27 14:22:12,199 basehttp 22968 9380 "GET /app_3/customer_all_products/2/2 HTTP/1.1" 200 1570
+INFO 2023-09-27 14:22:13,119 basehttp 22968 9380 "GET /app_3/customer_all_products/2/3 HTTP/1.1" 200 1570
+INFO 2023-09-27 14:22:13,833 basehttp 22968 9380 "GET /app_3/customer_all_products/2/3 HTTP/1.1" 200 1570
+INFO 2023-09-27 14:22:40,398 autoreload 22968 6300 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 14:22:41,557 autoreload 20384 26480 Watching for file changes with StatReloader
+INFO 2023-09-27 14:26:30,035 autoreload 20384 26480 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 14:26:31,006 autoreload 984 23176 Watching for file changes with StatReloader
+INFO 2023-09-27 14:27:03,244 autoreload 984 23176 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 14:27:04,342 autoreload 5376 13968 Watching for file changes with StatReloader
+INFO 2023-09-27 14:27:42,351 autoreload 5376 13968 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\urls.py changed, reloading.
+INFO 2023-09-27 14:27:43,586 autoreload 24848 28264 Watching for file changes with StatReloader
+INFO 2023-09-27 14:27:44,733 basehttp 24848 23208 "GET /app_3/customer_all_products/2 HTTP/1.1" 301 0
+INFO 2023-09-27 14:27:44,767 basehttp 24848 19196 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 1570
+INFO 2023-09-27 14:27:54,173 autoreload 24848 28264 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 14:27:55,401 autoreload 28512 4688 Watching for file changes with StatReloader
+INFO 2023-09-27 14:27:57,435 basehttp 28512 12004 "GET /app_3/customer_all_products/2/ HTTP/1.1" 200 1570
+INFO 2023-09-27 14:27:59,856 basehttp 28512 12004 "GET /app_3/customer_all_products/2/1 HTTP/1.1" 200 1570
+INFO 2023-09-27 14:28:00,285 basehttp 28512 12004 "GET /app_3/customer_all_products/2/2 HTTP/1.1" 200 1570
+INFO 2023-09-27 14:28:01,586 basehttp 28512 12004 "GET /app_3/customer_all_products/2/3 HTTP/1.1" 200 1570
+INFO 2023-09-27 14:28:02,658 basehttp 28512 12004 "GET /app_3/customer_all_products/2/1 HTTP/1.1" 200 1570
+INFO 2023-09-27 14:30:41,826 autoreload 28512 4688 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
+INFO 2023-09-27 14:30:43,210 autoreload 12188 19272 Watching for file changes with StatReloader

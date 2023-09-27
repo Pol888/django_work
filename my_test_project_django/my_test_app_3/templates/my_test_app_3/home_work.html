@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}
+     list all products
+{% endblock %}
+
+{% block style %}
+        .floated {
+         float:left;
+         margin-right:5px;
+}
+{% endblock %}
+
+
+{% block main %}
+    <h3>Сортировать:</h3>
+<div>
+    <input type="button" onclick="window.location.href='{% url 'customer_all_products' id_customer 1 %}';" class="floated" id="slide_week_button" value="week">
+    <input type="button" onclick="window.location.href='{% url 'customer_all_products' id_customer 2 %}';" class="floated" id="slide_month_button"  value="month">
+    <input type="button" onclick="window.location.href='{% url 'customer_all_products' id_customer 3 %}';" class="floated" id="slide_year_button"  value="year">
+
+</div><br>
+
+
+<div>{% for i in list_products %}
+            <br>{{ i }}
+         {% endfor %}
+    </div>
+
+{% endblock %}

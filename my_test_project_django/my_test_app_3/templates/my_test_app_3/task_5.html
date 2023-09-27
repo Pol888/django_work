@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+     {{ pub.heading }} !
+{% endblock %}
+
+{% block main %}
+
+    <p>
+       Heading: {{ pub.heading }}<br>
+       Content: {{ pub.content }}<br>
+       Publication_date: {{ pub.publication_date }}<br>
+       {{ pub.author }}<br>
+       Category: {{ pub.category }}<br>
+       Count_views: {{ pub.count_views }}<br>
+       Publish_flag {{ pub.publish_flag }}<br>
+    </p>
+
+{% endblock %}

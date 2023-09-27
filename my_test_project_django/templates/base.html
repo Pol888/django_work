@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+            base
+        {% endblock %}
+    </title>
+    <style>
+        .header {
+            height: 40px;
+            padding: 20px 20px 0;
+            background: #ff1d57;
+      }
+      .main-content {
+            height: 60vh;
+            padding: 80px;
+      }
+        footer  {
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+            background-color: #45a1ff;
+            color: #fff;
+                }
+       {% block style %}
+
+        {% endblock %}
+
+    </style>
+
+</head>
+<body>
+    <div class="header">Заголовок / Меню</div>
+    <div class="main-content">
+        {% block main %}
+            <h1>Основной контент</h1>
+            <p>Это какой-то параграф. </p>
+        {% endblock %}
+    </div>
+    <footer>
+        <p>© 2023 SEMINAR GB</p>
+    </footer>
+</body>
+</html>

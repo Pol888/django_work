@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+     {{ au.first_name }} {{au.last_name}}!
+{% endblock %}
+
+{% block main %}
+
+    {% for i in st %}
+        {% if i.publish_flag == False %}
+        <a href="{% url 'article' i.id %}"> {{ i.heading }}<br></a>
+        {% else %}
+        {{ i.heading }}<br>
+        {% endif %}}
+    {% endfor %}
+
+{% endblock %}

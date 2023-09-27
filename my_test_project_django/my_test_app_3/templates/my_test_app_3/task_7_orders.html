@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+     list orders
+{% endblock %}
+
+{% block main %}
+
+    {% for i in orders %}
+
+        <a href="{% url 'order_products' i.id %}"> {{ i }}<br></a>
+
+    {% endfor %}
+
+{% endblock %}
