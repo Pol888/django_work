@@ -69,21 +69,21 @@ def heads_and_tails(request, count):
     data = ['Орел', 'Решка']
     context = {'list_result': [data[random.randint(0, 1)] for _ in range(count)],
                'count': count}
-    return render(request, 'my_test_app_3/task_3.html', context)
+    return render(request, 'my_test_app_3/task_1_apps.html', context)
 
 
 def cubic(request, count):
     context = {'list_result': [random.randint(1, 6) for _ in range(count)],
                'count': count}
     print(context.items())
-    return render(request, 'my_test_app_3/task_3.html', context)
+    return render(request, 'my_test_app_3/task_1_apps.html', context)
 
 
 def random_number(request, count):
     random.randint(1, 100)
     context = {'list_result': [random.randint(1, 100) for _ in range(count)],
                'count': count}
-    return render(request, 'my_test_app_3/task_3.html', context)
+    return render(request, 'my_test_app_3/task_1_apps.html', context)
 
 
 # -----------------------------------------------------------------------------------

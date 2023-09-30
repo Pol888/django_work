@@ -1,3 +1,11 @@
-import datetime
+def f(n):
+    f.__dict__['1'] = 3
+    return [1, 2, n]
 
-print(datetime.datetime.now() - datetime.timedelta(days=7))
+
+
+
+
+
+print(len(f.__dict__))
+

@@ -7,7 +7,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('my_test_app_3', '0002_alter_comment_date_update'),
+        ('my_test_app_4', '0002_alter_comment_date_update'),
     ]
 
     operations = [
@@ -28,7 +28,7 @@ class Migration(migrations.Migration):
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('order_amount', models.DecimalField(decimal_places=2, max_digits=8)),
                 ('date_add', models.DateTimeField(auto_now_add=True)),
-                ('customer', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='my_test_app_3.customer')),
+                ('customer', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='my_test_app_4.customer')),
             ],
         ),
         migrations.CreateModel(
@@ -46,8 +46,8 @@ class Migration(migrations.Migration):
             name='ProductInOrder',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('order', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='my_test_app_3.order')),
-                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='my_test_app_3.product')),
+                ('order', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='my_test_app_4.order')),
+                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='my_test_app_4.product')),
             ],
         ),
     ]

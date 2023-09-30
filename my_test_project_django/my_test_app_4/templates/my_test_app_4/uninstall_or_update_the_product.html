@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+     выберете дейтсвие !
+{% endblock %}
+
+{% block style %}
+        .floated {
+         float:left;
+         margin-right:5px;
+}
+{% endblock %}
+
+{% block main %}
+    <h3>Выберете действие:</h3>
+<div>
+    <input type="button" onclick="window.location.href='{% url 'products_editor' 1 %}';" class="floated" id="slide_week_button" value="Создать товар">
+    <input type="button" onclick="window.location.href='{% url 'products_editor' 2 %}';" class="floated" id="slide_month_button"  value="Редактировать товар">
+</div><br>
+
+{% endblock %}

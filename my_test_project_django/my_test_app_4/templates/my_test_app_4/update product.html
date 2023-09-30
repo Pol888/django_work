@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Изменение продукта
+{% endblock %}
+
+{% block main %}
+
+    <h1>{{ product_str }}</h1>
+    <h2>{{ massage }}</h2>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.as_div }}
+        <input type="submit" value="Изменить">
+
+    </form>
+
+{% endblock %}

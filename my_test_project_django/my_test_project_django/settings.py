@@ -40,9 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'my_test_app',
-    'my_test_app_2',
-    'my_test_app_3',
+    #'my_test_app',
+    #'my_test_app_2',
+     #my_test_app_3',
+     'my_test_app_4',
 ]
 
 MIDDLEWARE = [
@@ -128,42 +129,44 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-"formatters": {
-        "verbose": {
-            "format": "{levelname} {asctime} {module} {process:d} {thread:d} {message}",
-            "style": "{",
-        },
-        "simple": {
-            "format": "{levelname} {message} ",
-            "style": "{",
-        },
-    },
-    'handlers': {
-        'console': {
-            'class': 'logging.StreamHandler',
-            "formatter": "simple",
-        },
-        'file': {
-            'class': 'logging.FileHandler',
-            'filename': './dj.log',
-            "formatter": "verbose",
-        },
-    },
-    'loggers': {
-        'django': {
-            'handlers': ['console', 'file'],
-            'level': 'INFO',
-        },
-        'my_test_app_2': {
-            'handlers': ['console', 'file'],
-            'level': 'INFO'
-        },
-        'my_test_app': {
-            'handlers': ['console', 'file'],
-            'level': 'INFO'
-        }
-    },
-}
+#LOGGING = {
+#    'version': 1,
+#    'disable_existing_loggers': False,
+#"formatters": {
+#        "verbose": {
+#            "format": "{levelname} {asctime} {module} {process:d} {thread:d} {message}",
+#            "style": "{",
+#        },
+#        "simple": {
+#            "format": "{levelname} {message} ",
+#            "style": "{",
+#        },
+#    },
+#    'handlers': {
+#        'console': {
+#            'class': 'logging.StreamHandler',
+#            "formatter": "simple",
+#        },
+#        'file': {
+#            'class': 'logging.FileHandler',
+#            'filename': './dj.log',
+#            "formatter": "verbose",
+#        },
+#    },
+#    'loggers': {
+#        'django': {
+#            'handlers': ['console', 'file'],
+#            'level': 'INFO',
+#        },
+#        'my_test_app_2': {
+#            'handlers': ['console', 'file'],
+#            'level': 'INFO'
+#        },
+#        'my_test_app': {
+#            'handlers': ['console', 'file'],
+#            'level': 'INFO'
+#        }
+#    },
+#}
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'

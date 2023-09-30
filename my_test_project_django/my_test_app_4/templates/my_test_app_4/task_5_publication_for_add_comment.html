@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+     {{ publication.heading }} !
+{% endblock %}
+
+{% block main %}
+    <p>
+        Heading: {{ publication.heading }}<br>
+        Content: {{ publication.content }}<br><br><br>
+        {% for i in comments %}
+            {% if i.date_create != i.date_update %}
+               Comment: {{ i.author }}|{{ i.comment }}| изменен: {{ i.date_update }}<br>
+            {% else %}
+               Comment: {{ i.author }}|{{ i.comment }}| создан: {{ i.date_create }}<br>
+            {% endif %}
+        {% endfor %}
+    </p>
+    <h2>{{ massage }}</h2>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Добавить">
+    </form>
+
+{% endblock %}

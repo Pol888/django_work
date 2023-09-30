@@ -3927,3 +3927,1783 @@ INFO 2023-09-27 14:28:01,586 basehttp 28512 12004 "GET /app_3/customer_all_produ
 INFO 2023-09-27 14:28:02,658 basehttp 28512 12004 "GET /app_3/customer_all_products/2/1 HTTP/1.1" 200 1570
 INFO 2023-09-27 14:30:41,826 autoreload 28512 4688 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_3\views.py changed, reloading.
 INFO 2023-09-27 14:30:43,210 autoreload 12188 19272 Watching for file changes with StatReloader
+INFO 2023-09-28 21:00:15,189 autoreload 12092 11720 Watching for file changes with StatReloader
+INFO 2023-09-28 21:02:24,324 autoreload 23576 7712 Watching for file changes with StatReloader
+INFO 2023-09-28 21:05:50,295 autoreload 23576 7712 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_project_django\settings.py changed, reloading.
+INFO 2023-09-28 21:06:06,525 autoreload 20092 15096 Watching for file changes with StatReloader
+INFO 2023-09-28 21:06:27,585 autoreload 20092 15096 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_project_django\settings.py changed, reloading.
+INFO 2023-09-28 21:06:28,594 autoreload 4732 28372 Watching for file changes with StatReloader
+INFO 2023-09-28 21:06:38,861 autoreload 4732 28372 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_project_django\settings.py changed, reloading.
+INFO 2023-09-28 21:06:40,014 autoreload 17932 12284 Watching for file changes with StatReloader
+WARNING 2023-09-28 21:09:51,339 log 17932 21460 Not Found: /app_3/about_me/
+WARNING 2023-09-28 21:09:51,343 basehttp 17932 21460 "GET /app_3/about_me/ HTTP/1.1" 404 2644
+WARNING 2023-09-28 21:09:52,305 log 17932 21460 Not Found: /favicon.ico
+WARNING 2023-09-28 21:09:52,309 basehttp 17932 21460 "GET /favicon.ico HTTP/1.1" 404 2546
+ERROR 2023-09-28 21:10:02,710 log 17932 21460 Internal Server Error: /app_4/makes_a_choice/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 26, in makes_a_choice
+    return render(request, 'my_test_app_4/make_a_choice', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: my_test_app_4/make_a_choice
+ERROR 2023-09-28 21:10:02,718 basehttp 17932 21460 "GET /app_4/makes_a_choice/ HTTP/1.1" 500 86113
+INFO 2023-09-28 21:11:02,188 autoreload 17932 12284 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-28 21:11:03,617 autoreload 12028 25660 Watching for file changes with StatReloader
+INFO 2023-09-28 21:11:05,598 basehttp 12028 6436 "GET /app_4/makes_a_choice/ HTTP/1.1" 200 1409
+INFO 2023-09-28 21:11:16,565 basehttp 12028 6436 "POST /app_4/makes_a_choice/ HTTP/1.1" 200 1429
+INFO 2023-09-28 21:11:25,410 basehttp 12028 6436 "POST /app_4/makes_a_choice/ HTTP/1.1" 200 1429
+INFO 2023-09-28 21:11:30,999 basehttp 12028 6436 "POST /app_4/makes_a_choice/ HTTP/1.1" 200 1429
+INFO 2023-09-28 21:13:30,333 basehttp 12028 6436 "POST /app_4/makes_a_choice/ HTTP/1.1" 200 1429
+INFO 2023-09-28 21:13:47,241 basehttp 12028 6436 "POST /app_4/makes_a_choice/ HTTP/1.1" 200 1429
+INFO 2023-09-28 21:13:47,938 basehttp 12028 6436 "POST /app_4/makes_a_choice/ HTTP/1.1" 200 1429
+INFO 2023-09-28 21:13:52,056 basehttp 12028 6436 "POST /app_4/makes_a_choice/ HTTP/1.1" 200 1429
+INFO 2023-09-28 21:13:54,683 basehttp 12028 6436 "POST /app_4/makes_a_choice/ HTTP/1.1" 200 1429
+INFO 2023-09-28 21:13:55,968 basehttp 12028 6436 "POST /app_4/makes_a_choice/ HTTP/1.1" 200 1429
+INFO 2023-09-28 21:15:21,092 autoreload 12028 25660 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-28 21:15:22,524 autoreload 21836 28576 Watching for file changes with StatReloader
+INFO 2023-09-28 21:15:42,206 basehttp 21836 18684 "GET /app_4/makes_a_choice/ HTTP/1.1" 200 1409
+INFO 2023-09-28 21:15:46,665 basehttp 21836 18684 "POST /app_4/makes_a_choice/ HTTP/1.1" 200 901
+INFO 2023-09-28 21:15:57,543 basehttp 21836 18684 "GET /app_4/makes_a_choice/ HTTP/1.1" 200 1409
+INFO 2023-09-28 21:16:01,047 basehttp 21836 18684 "POST /app_4/makes_a_choice/ HTTP/1.1" 200 949
+INFO 2023-09-28 21:16:03,734 basehttp 21836 18684 "GET /app_4/makes_a_choice/ HTTP/1.1" 200 1409
+INFO 2023-09-28 21:16:07,059 basehttp 21836 18684 "POST /app_4/makes_a_choice/ HTTP/1.1" 200 890
+INFO 2023-09-28 21:16:09,234 basehttp 21836 18684 "GET /app_4/makes_a_choice/ HTTP/1.1" 200 1409
+INFO 2023-09-28 21:16:10,935 basehttp 21836 18684 "POST /app_4/makes_a_choice/ HTTP/1.1" 200 890
+INFO 2023-09-28 21:16:12,275 basehttp 21836 18684 "GET /app_4/makes_a_choice/ HTTP/1.1" 200 1409
+INFO 2023-09-28 21:16:14,744 basehttp 21836 18684 "POST /app_4/makes_a_choice/ HTTP/1.1" 200 897
+INFO 2023-09-28 21:16:16,639 basehttp 21836 18684 "GET /app_4/makes_a_choice/ HTTP/1.1" 200 1409
+INFO 2023-09-28 21:17:09,680 basehttp 21836 18684 "POST /app_4/makes_a_choice/ HTTP/1.1" 200 1478
+INFO 2023-09-28 21:17:14,217 basehttp 21836 18684 "GET /app_4/makes_a_choice/ HTTP/1.1" 200 1409
+INFO 2023-09-28 21:17:17,530 basehttp 21836 18684 "POST /app_4/makes_a_choice/ HTTP/1.1" 200 1236
+INFO 2023-09-28 21:17:39,078 autoreload 21836 28576 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-28 21:17:40,564 autoreload 23412 27500 Watching for file changes with StatReloader
+INFO 2023-09-28 21:18:33,781 basehttp 23412 24760 "GET /app_4/makes_a_choice/ HTTP/1.1" 200 1409
+INFO 2023-09-28 21:19:05,358 basehttp 23412 24760 "POST /app_4/makes_a_choice/ HTTP/1.1" 200 800
+INFO 2023-09-28 21:19:08,530 basehttp 23412 24760 "POST /app_4/makes_a_choice/ HTTP/1.1" 200 800
+INFO 2023-09-28 21:19:10,943 basehttp 23412 24760 "POST /app_4/makes_a_choice/ HTTP/1.1" 200 800
+INFO 2023-09-28 21:19:12,205 basehttp 23412 24760 "GET /app_4/makes_a_choice/ HTTP/1.1" 200 1409
+INFO 2023-09-28 21:21:41,884 autoreload 23412 27500 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\models.py changed, reloading.
+INFO 2023-09-28 21:21:43,167 autoreload 5732 4796 Watching for file changes with StatReloader
+INFO 2023-09-28 21:42:14,727 autoreload 18520 4448 Watching for file changes with StatReloader
+INFO 2023-09-28 21:42:27,680 basehttp 18520 2664 "GET /app_4/add_author/ HTTP/1.1" 200 1490
+INFO 2023-09-28 21:42:34,753 basehttp 18520 2664 "GET /app_4/add_author/ HTTP/1.1" 200 1490
+INFO 2023-09-28 21:42:36,813 basehttp 18520 2664 "GET /app_4/add_author/ HTTP/1.1" 200 1490
+INFO 2023-09-28 21:43:16,028 autoreload 18520 4448 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-28 21:43:17,543 autoreload 7352 25464 Watching for file changes with StatReloader
+INFO 2023-09-28 21:43:19,239 basehttp 7352 4932 "GET /app_4/add_author/ HTTP/1.1" 200 1077
+ERROR 2023-09-28 21:43:26,279 log 7352 4932 Internal Server Error: /app_4/add_author/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 23, in add_author
+    if form.is_valid():
+       ^^^^^^^^^^^^^
+AttributeError: 'Autor' object has no attribute 'is_valid'
+ERROR 2023-09-28 21:43:26,283 basehttp 7352 4932 "POST /app_4/add_author/ HTTP/1.1" 500 71725
+INFO 2023-09-28 21:44:07,332 autoreload 7352 25464 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-28 21:44:08,514 autoreload 21788 4752 Watching for file changes with StatReloader
+INFO 2023-09-28 21:44:16,850 basehttp 21788 18704 "GET /app_4/add_author/ HTTP/1.1" 200 1854
+INFO 2023-09-28 21:44:50,482 basehttp 21788 18704 "POST /app_4/add_author/ HTTP/1.1" 200 2075
+INFO 2023-09-28 22:09:09,758 autoreload 5672 9056 Watching for file changes with StatReloader
+INFO 2023-09-28 22:10:21,523 basehttp 5672 8764 "POST /app_4/add_author/ HTTP/1.1" 200 2018
+INFO 2023-09-29 07:43:22,225 autoreload 14708 12204 Watching for file changes with StatReloader
+WARNING 2023-09-29 07:43:41,709 log 14708 9432 Not Found: /app_3/main_site/
+WARNING 2023-09-29 07:43:41,711 basehttp 14708 9432 "GET /app_3/main_site/ HTTP/1.1" 404 2830
+WARNING 2023-09-29 07:43:42,763 log 14708 9432 Not Found: /favicon.ico
+WARNING 2023-09-29 07:43:42,765 basehttp 14708 9432 "GET /favicon.ico HTTP/1.1" 404 2546
+WARNING 2023-09-29 07:43:51,666 log 14708 9432 Not Found: /app_4/
+WARNING 2023-09-29 07:43:51,667 basehttp 14708 9432 "GET /app_4/ HTTP/1.1" 404 2800
+INFO 2023-09-29 07:44:03,283 basehttp 14708 9432 "GET /app_4/add_author HTTP/1.1" 301 0
+INFO 2023-09-29 07:44:03,335 basehttp 14708 3636 "GET /app_4/add_author/ HTTP/1.1" 200 1854
+INFO 2023-09-29 07:45:02,613 basehttp 14708 3636 "POST /app_4/add_author/ HTTP/1.1" 200 1987
+INFO 2023-09-29 08:01:21,271 autoreload 14708 12204 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 08:01:22,960 autoreload 14876 9296 Watching for file changes with StatReloader
+INFO 2023-09-29 08:02:14,064 autoreload 14876 9296 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 08:02:15,539 autoreload 2592 2812 Watching for file changes with StatReloader
+INFO 2023-09-29 08:06:56,555 autoreload 2592 2812 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 08:06:57,916 autoreload 7640 3112 Watching for file changes with StatReloader
+INFO 2023-09-29 08:14:36,359 autoreload 7640 3112 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 08:14:38,283 autoreload 13140 9228 Watching for file changes with StatReloader
+INFO 2023-09-29 08:26:59,671 autoreload 13140 9228 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\forms.py changed, reloading.
+INFO 2023-09-29 08:27:00,541 autoreload 4328 14160 Watching for file changes with StatReloader
+INFO 2023-09-29 08:29:54,744 autoreload 4328 14160 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\forms.py changed, reloading.
+INFO 2023-09-29 08:29:55,987 autoreload 2060 6840 Watching for file changes with StatReloader
+INFO 2023-09-29 08:38:16,139 autoreload 2060 6840 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\forms.py changed, reloading.
+INFO 2023-09-29 08:38:17,544 autoreload 10212 15916 Watching for file changes with StatReloader
+INFO 2023-09-29 08:43:46,014 autoreload 10212 15916 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\forms.py changed, reloading.
+INFO 2023-09-29 08:43:47,443 autoreload 7988 14656 Watching for file changes with StatReloader
+INFO 2023-09-29 08:44:30,386 autoreload 7988 14656 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\forms.py changed, reloading.
+INFO 2023-09-29 08:44:31,554 autoreload 5964 1320 Watching for file changes with StatReloader
+INFO 2023-09-29 08:44:53,297 basehttp 5964 4396 "GET /app_4/makes_a_choice/ HTTP/1.1" 200 1409
+INFO 2023-09-29 08:45:00,939 basehttp 5964 4396 "GET /app_4/makes_a_choice/ HTTP/1.1" 200 1409
+WARNING 2023-09-29 08:45:08,129 log 5964 4396 Not Found: /app_4/
+WARNING 2023-09-29 08:45:08,131 basehttp 5964 4396 "GET /app_4/ HTTP/1.1" 404 2993
+INFO 2023-09-29 08:45:21,568 basehttp 5964 4396 "GET /app_4/add_publication HTTP/1.1" 301 0
+ERROR 2023-09-29 08:45:21,806 log 5964 15176 Internal Server Error: /app_4/add_publication/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 28, in add_publication
+    return render(request, 'my_test_app_4/add_author.html', {'form': form, 'massage': massage})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 914, in _resolve_lookup
+    current = current()
+              ^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\forms\utils.py", line 84, in as_p
+    return self.render(self.template_name_p)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\forms\utils.py", line 75, in render
+    return mark_safe(renderer.render(template, context))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\forms\renderers.py", line 29, in render
+    return template.render(context, request=request).strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1070, in render
+    return render_value_in_context(output, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1047, in render_value_in_context
+    value = str(value)
+            ^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\utils\html.py", line 420, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+                                           ^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\forms\boundfield.py", line 34, in __str__
+    return self.as_widget()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\forms\boundfield.py", line 94, in as_widget
+    attrs = self.build_widget_attrs(attrs, widget)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\forms\boundfield.py", line 269, in build_widget_attrs
+    widget.use_required_attribute(self.initial)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\forms\widgets.py", line 779, in use_required_attribute
+    first_choice = next(iter(self.choices), None)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\forms\fields.py", line 850, in __iter__
+    yield from self.choices_func()
+               ^^^^^^^^^^^^^^^^^^^
+TypeError: Publication.list_of_authors() missing 1 required positional argument: 'self'
+ERROR 2023-09-29 08:45:21,833 basehttp 5964 15176 "GET /app_4/add_publication/ HTTP/1.1" 500 259682
+INFO 2023-09-29 08:46:19,183 autoreload 5964 1320 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\forms.py changed, reloading.
+INFO 2023-09-29 08:46:20,364 autoreload 8444 11444 Watching for file changes with StatReloader
+ERROR 2023-09-29 08:46:25,421 log 8444 3652 Internal Server Error: /app_4/add_publication/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 25, in add_publication
+    form = Publication()
+           ^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\forms\forms.py", line 107, in __init__
+    self.fields = copy.deepcopy(self.base_fields)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\AppData\Local\Programs\Python\Python311\Lib\copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\AppData\Local\Programs\Python\Python311\Lib\copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\AppData\Local\Programs\Python\Python311\Lib\copy.py", line 153, in deepcopy
+    y = copier(memo)
+        ^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\forms\fields.py", line 867, in __deepcopy__
+    result._choices = copy.deepcopy(self._choices, memo)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\AppData\Local\Programs\Python\Python311\Lib\copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\AppData\Local\Programs\Python\Python311\Lib\copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\AppData\Local\Programs\Python\Python311\Lib\copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\AppData\Local\Programs\Python\Python311\Lib\copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\AppData\Local\Programs\Python\Python311\Lib\copy.py", line 161, in deepcopy
+    rv = reductor(4)
+         ^^^^^^^^^^^
+TypeError: cannot pickle 'staticmethod' object
+ERROR 2023-09-29 08:46:25,432 basehttp 8444 3652 "GET /app_4/add_publication/ HTTP/1.1" 500 131133
+INFO 2023-09-29 08:46:42,075 autoreload 8444 11444 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\forms.py changed, reloading.
+INFO 2023-09-29 08:46:43,402 autoreload 14492 8820 Watching for file changes with StatReloader
+INFO 2023-09-29 08:46:45,404 basehttp 14492 6964 "GET /app_4/add_publication/ HTTP/1.1" 200 1811
+INFO 2023-09-29 08:47:05,004 basehttp 14492 6964 "POST /app_4/add_publication/ HTTP/1.1" 200 1848
+INFO 2023-09-29 08:47:26,135 autoreload 14492 8820 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\forms.py changed, reloading.
+INFO 2023-09-29 08:47:27,344 autoreload 9752 14844 Watching for file changes with StatReloader
+INFO 2023-09-29 08:47:33,417 basehttp 9752 7896 "POST /app_4/add_publication/ HTTP/1.1" 200 2037
+INFO 2023-09-29 08:47:42,316 basehttp 9752 7896 "POST /app_4/add_publication/ HTTP/1.1" 200 1972
+INFO 2023-09-29 08:47:45,929 basehttp 9752 7896 "POST /app_4/add_publication/ HTTP/1.1" 200 1972
+INFO 2023-09-29 08:48:10,725 basehttp 9752 7896 "POST /app_4/add_publication/ HTTP/1.1" 200 1979
+INFO 2023-09-29 08:48:12,881 basehttp 9752 7896 "POST /app_4/add_publication/ HTTP/1.1" 200 1979
+INFO 2023-09-29 08:51:56,041 autoreload 9752 14844 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 08:51:56,904 autoreload 3620 9296 Watching for file changes with StatReloader
+ERROR 2023-09-29 08:52:15,874 log 3620 14260 Internal Server Error: /app_4/add_publication/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 22, in add_publication
+    PublicationModel(heading=heading, content=content, author=author, category=category).save()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\base.py", line 543, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 266, in __set__
+    raise ValueError(
+ValueError: Cannot assign "'Autor Павел, Демидович, gff@rrfr.ru, 1988-08-23.'": "Publication.author" must be a "Autor" instance.
+ERROR 2023-09-29 08:52:15,883 basehttp 3620 14260 "POST /app_4/add_publication/ HTTP/1.1" 500 84372
+INFO 2023-09-29 08:53:09,728 autoreload 3620 9296 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 08:53:10,589 autoreload 9468 10576 Watching for file changes with StatReloader
+INFO 2023-09-29 08:53:17,618 basehttp 9468 3192 "POST /app_4/add_publication/ HTTP/1.1" 200 1976
+INFO 2023-09-29 08:53:19,894 basehttp 9468 3192 "POST /app_4/add_publication/ HTTP/1.1" 200 1976
+INFO 2023-09-29 08:53:51,222 autoreload 9468 10576 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 08:53:52,092 autoreload 3336 10976 Watching for file changes with StatReloader
+INFO 2023-09-29 08:53:55,110 basehttp 3336 3204 "POST /app_4/add_publication/ HTTP/1.1" 200 1976
+INFO 2023-09-29 08:59:02,668 autoreload 3336 10976 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 08:59:03,556 autoreload 7772 1692 Watching for file changes with StatReloader
+INFO 2023-09-29 08:59:06,964 basehttp 7772 14568 "POST /app_4/add_publication/ HTTP/1.1" 200 1978
+INFO 2023-09-29 08:59:55,652 basehttp 7772 14568 "POST /app_4/add_publication/ HTTP/1.1" 200 1852
+INFO 2023-09-29 09:03:44,568 autoreload 7772 1692 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\forms.py changed, reloading.
+INFO 2023-09-29 09:03:45,424 autoreload 512 2528 Watching for file changes with StatReloader
+INFO 2023-09-29 09:03:53,530 basehttp 512 7620 "POST /app_4/add_publication/ HTTP/1.1" 200 1927
+INFO 2023-09-29 09:03:58,633 basehttp 512 7620 "POST /app_4/add_publication/ HTTP/1.1" 200 1862
+INFO 2023-09-29 10:20:27,445 autoreload 512 2528 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 10:20:29,076 autoreload 17620 6208 Watching for file changes with StatReloader
+INFO 2023-09-29 10:39:48,231 autoreload 17620 6208 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 10:39:49,221 autoreload 248 17344 Watching for file changes with StatReloader
+INFO 2023-09-29 11:01:23,143 autoreload 248 17344 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 11:01:23,997 autoreload 7472 17444 Watching for file changes with StatReloader
+INFO 2023-09-29 11:03:30,114 autoreload 7472 17444 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 11:03:30,977 autoreload 15352 16436 Watching for file changes with StatReloader
+INFO 2023-09-29 11:03:48,345 basehttp 15352 15912 "GET /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 1281
+INFO 2023-09-29 11:03:58,059 basehttp 15352 15912 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 1281
+INFO 2023-09-29 11:04:01,409 basehttp 15352 15912 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 1281
+INFO 2023-09-29 11:07:26,424 autoreload 15352 16436 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 11:07:27,438 autoreload 18140 18016 Watching for file changes with StatReloader
+INFO 2023-09-29 11:12:22,363 autoreload 18140 18016 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 11:12:23,276 autoreload 7592 9504 Watching for file changes with StatReloader
+INFO 2023-09-29 11:12:29,916 basehttp 7592 15276 "GET /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 1281
+ERROR 2023-09-29 11:12:48,882 log 7592 15276 Internal Server Error: /app_4/add_a_comment_to_the_article/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 27, in add_a_comment_to_the_article
+    return add_a_comment_to_the_article(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 27, in add_a_comment_to_the_article
+    return add_a_comment_to_the_article(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 27, in add_a_comment_to_the_article
+    return add_a_comment_to_the_article(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 938 more times]
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 16, in add_a_comment_to_the_article
+    publication = get_object_or_404(PublicationModel, pk=id_publication)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1549, in execute_sql
+    sql, params = self.as_sql()
+                  ^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 764, in as_sql
+    self.compile(self.where) if self.where is not None else ("", [])
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 546, in compile
+    sql, params = node.as_sql(self, self.connection)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\where.py", line 145, in as_sql
+    sql, params = compiler.compile(child)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 546, in compile
+    sql, params = node.as_sql(self, self.connection)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\lookups.py", line 357, in as_sql
+    return super().as_sql(compiler, connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\lookups.py", line 224, in as_sql
+    lhs_sql, params = self.process_lhs(compiler, connection)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\lookups.py", line 214, in process_lhs
+    lhs_sql, params = super().process_lhs(compiler, connection, lhs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\lookups.py", line 101, in process_lhs
+    lhs = lhs.resolve_expression(compiler.query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\expressions.py", line 275, in resolve_expression
+    c = self.copy()
+        ^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\expressions.py", line 415, in copy
+    return copy.copy(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\AppData\Local\Programs\Python\Python311\Lib\copy.py", line 102, in copy
+    return _reconstruct(x, None, *rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\AppData\Local\Programs\Python\Python311\Lib\copy.py", line 265, in _reconstruct
+    y = func(*args)
+        ^^^^^^^^^^^
+  File "C:\Users\pollove\AppData\Local\Programs\Python\Python311\Lib\copyreg.py", line 105, in __newobj__
+    return cls.__new__(cls, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\utils\deconstruct.py", line 17, in __new__
+    obj = super(klass, cls).__new__(cls)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded while calling a Python object
+ERROR 2023-09-29 11:12:49,019 basehttp 7592 15276 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 500 5352378
+INFO 2023-09-29 11:12:49,038 basehttp 7592 15276 - Broken pipe from ('127.0.0.1', 63547)
+ERROR 2023-09-29 11:12:55,502 log 7592 612 Internal Server Error: /app_4/add_a_comment_to_the_article/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 27, in add_a_comment_to_the_article
+    return add_a_comment_to_the_article(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 27, in add_a_comment_to_the_article
+    return add_a_comment_to_the_article(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 27, in add_a_comment_to_the_article
+    return add_a_comment_to_the_article(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 938 more times]
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 16, in add_a_comment_to_the_article
+    publication = get_object_or_404(PublicationModel, pk=id_publication)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1549, in execute_sql
+    sql, params = self.as_sql()
+                  ^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 764, in as_sql
+    self.compile(self.where) if self.where is not None else ("", [])
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 546, in compile
+    sql, params = node.as_sql(self, self.connection)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\where.py", line 145, in as_sql
+    sql, params = compiler.compile(child)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 546, in compile
+    sql, params = node.as_sql(self, self.connection)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\lookups.py", line 357, in as_sql
+    return super().as_sql(compiler, connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\lookups.py", line 224, in as_sql
+    lhs_sql, params = self.process_lhs(compiler, connection)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\lookups.py", line 214, in process_lhs
+    lhs_sql, params = super().process_lhs(compiler, connection, lhs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\lookups.py", line 101, in process_lhs
+    lhs = lhs.resolve_expression(compiler.query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\expressions.py", line 275, in resolve_expression
+    c = self.copy()
+        ^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\expressions.py", line 415, in copy
+    return copy.copy(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\AppData\Local\Programs\Python\Python311\Lib\copy.py", line 102, in copy
+    return _reconstruct(x, None, *rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\AppData\Local\Programs\Python\Python311\Lib\copy.py", line 265, in _reconstruct
+    y = func(*args)
+        ^^^^^^^^^^^
+  File "C:\Users\pollove\AppData\Local\Programs\Python\Python311\Lib\copyreg.py", line 105, in __newobj__
+    return cls.__new__(cls, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\utils\deconstruct.py", line 17, in __new__
+    obj = super(klass, cls).__new__(cls)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded while calling a Python object
+ERROR 2023-09-29 11:12:55,583 basehttp 7592 612 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 500 5352378
+INFO 2023-09-29 11:12:55,592 basehttp 7592 612 - Broken pipe from ('127.0.0.1', 63548)
+ERROR 2023-09-29 11:12:56,743 log 7592 18148 Internal Server Error: /app_4/add_a_comment_to_the_article/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 27, in add_a_comment_to_the_article
+    return add_a_comment_to_the_article(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 27, in add_a_comment_to_the_article
+    return add_a_comment_to_the_article(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 27, in add_a_comment_to_the_article
+    return add_a_comment_to_the_article(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 938 more times]
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 16, in add_a_comment_to_the_article
+    publication = get_object_or_404(PublicationModel, pk=id_publication)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1549, in execute_sql
+    sql, params = self.as_sql()
+                  ^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 764, in as_sql
+    self.compile(self.where) if self.where is not None else ("", [])
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 546, in compile
+    sql, params = node.as_sql(self, self.connection)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\where.py", line 145, in as_sql
+    sql, params = compiler.compile(child)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 546, in compile
+    sql, params = node.as_sql(self, self.connection)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\lookups.py", line 357, in as_sql
+    return super().as_sql(compiler, connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\lookups.py", line 224, in as_sql
+    lhs_sql, params = self.process_lhs(compiler, connection)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\lookups.py", line 214, in process_lhs
+    lhs_sql, params = super().process_lhs(compiler, connection, lhs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\lookups.py", line 101, in process_lhs
+    lhs = lhs.resolve_expression(compiler.query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\expressions.py", line 275, in resolve_expression
+    c = self.copy()
+        ^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\expressions.py", line 415, in copy
+    return copy.copy(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\AppData\Local\Programs\Python\Python311\Lib\copy.py", line 102, in copy
+    return _reconstruct(x, None, *rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\AppData\Local\Programs\Python\Python311\Lib\copy.py", line 265, in _reconstruct
+    y = func(*args)
+        ^^^^^^^^^^^
+  File "C:\Users\pollove\AppData\Local\Programs\Python\Python311\Lib\copyreg.py", line 105, in __newobj__
+    return cls.__new__(cls, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\utils\deconstruct.py", line 17, in __new__
+    obj = super(klass, cls).__new__(cls)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded while calling a Python object
+ERROR 2023-09-29 11:12:56,815 basehttp 7592 18148 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 500 5352378
+INFO 2023-09-29 11:12:56,823 basehttp 7592 18148 - Broken pipe from ('127.0.0.1', 63549)
+ERROR 2023-09-29 11:12:57,765 log 7592 16608 Internal Server Error: /app_4/add_a_comment_to_the_article/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 27, in add_a_comment_to_the_article
+    return add_a_comment_to_the_article(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 27, in add_a_comment_to_the_article
+    return add_a_comment_to_the_article(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 27, in add_a_comment_to_the_article
+    return add_a_comment_to_the_article(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 938 more times]
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 16, in add_a_comment_to_the_article
+    publication = get_object_or_404(PublicationModel, pk=id_publication)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1549, in execute_sql
+    sql, params = self.as_sql()
+                  ^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 764, in as_sql
+    self.compile(self.where) if self.where is not None else ("", [])
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 546, in compile
+    sql, params = node.as_sql(self, self.connection)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\where.py", line 145, in as_sql
+    sql, params = compiler.compile(child)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 546, in compile
+    sql, params = node.as_sql(self, self.connection)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\lookups.py", line 357, in as_sql
+    return super().as_sql(compiler, connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\lookups.py", line 224, in as_sql
+    lhs_sql, params = self.process_lhs(compiler, connection)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\lookups.py", line 214, in process_lhs
+    lhs_sql, params = super().process_lhs(compiler, connection, lhs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\lookups.py", line 101, in process_lhs
+    lhs = lhs.resolve_expression(compiler.query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\expressions.py", line 275, in resolve_expression
+    c = self.copy()
+        ^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\expressions.py", line 415, in copy
+    return copy.copy(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\AppData\Local\Programs\Python\Python311\Lib\copy.py", line 102, in copy
+    return _reconstruct(x, None, *rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\AppData\Local\Programs\Python\Python311\Lib\copy.py", line 265, in _reconstruct
+    y = func(*args)
+        ^^^^^^^^^^^
+  File "C:\Users\pollove\AppData\Local\Programs\Python\Python311\Lib\copyreg.py", line 105, in __newobj__
+    return cls.__new__(cls, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\utils\deconstruct.py", line 17, in __new__
+    obj = super(klass, cls).__new__(cls)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded while calling a Python object
+ERROR 2023-09-29 11:12:57,901 basehttp 7592 16608 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 500 5352378
+ERROR 2023-09-29 11:12:58,947 log 7592 13120 Internal Server Error: /app_4/add_a_comment_to_the_article/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 27, in add_a_comment_to_the_article
+    return add_a_comment_to_the_article(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 27, in add_a_comment_to_the_article
+    return add_a_comment_to_the_article(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 27, in add_a_comment_to_the_article
+    return add_a_comment_to_the_article(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 938 more times]
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 16, in add_a_comment_to_the_article
+    publication = get_object_or_404(PublicationModel, pk=id_publication)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1549, in execute_sql
+    sql, params = self.as_sql()
+                  ^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 764, in as_sql
+    self.compile(self.where) if self.where is not None else ("", [])
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 546, in compile
+    sql, params = node.as_sql(self, self.connection)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\where.py", line 145, in as_sql
+    sql, params = compiler.compile(child)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 546, in compile
+    sql, params = node.as_sql(self, self.connection)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\lookups.py", line 357, in as_sql
+    return super().as_sql(compiler, connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\lookups.py", line 224, in as_sql
+    lhs_sql, params = self.process_lhs(compiler, connection)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\lookups.py", line 214, in process_lhs
+    lhs_sql, params = super().process_lhs(compiler, connection, lhs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\lookups.py", line 101, in process_lhs
+    lhs = lhs.resolve_expression(compiler.query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\expressions.py", line 275, in resolve_expression
+    c = self.copy()
+        ^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\db\models\expressions.py", line 415, in copy
+    return copy.copy(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\AppData\Local\Programs\Python\Python311\Lib\copy.py", line 102, in copy
+    return _reconstruct(x, None, *rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\AppData\Local\Programs\Python\Python311\Lib\copy.py", line 265, in _reconstruct
+    y = func(*args)
+        ^^^^^^^^^^^
+  File "C:\Users\pollove\AppData\Local\Programs\Python\Python311\Lib\copyreg.py", line 105, in __newobj__
+    return cls.__new__(cls, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\utils\deconstruct.py", line 17, in __new__
+    obj = super(klass, cls).__new__(cls)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded while calling a Python object
+ERROR 2023-09-29 11:12:59,024 basehttp 7592 13120 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 500 5352378
+INFO 2023-09-29 11:13:03,637 autoreload 7592 9504 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 11:13:04,915 autoreload 8052 17472 Watching for file changes with StatReloader
+INFO 2023-09-29 11:13:49,131 autoreload 8052 17472 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 11:13:50,414 autoreload 16472 17632 Watching for file changes with StatReloader
+INFO 2023-09-29 11:14:16,317 autoreload 16472 17632 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 11:14:17,348 autoreload 17892 11428 Watching for file changes with StatReloader
+INFO 2023-09-29 11:15:03,758 autoreload 17892 11428 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 11:15:04,654 autoreload 8820 9468 Watching for file changes with StatReloader
+INFO 2023-09-29 11:15:30,399 basehttp 8820 15648 "GET /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 1281
+INFO 2023-09-29 11:16:04,863 basehttp 8820 4620 "GET /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 1281
+INFO 2023-09-29 11:18:42,964 autoreload 8820 9468 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 11:18:43,982 autoreload 7008 17596 Watching for file changes with StatReloader
+INFO 2023-09-29 11:18:45,169 basehttp 7008 17892 "GET /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 1281
+INFO 2023-09-29 11:20:29,987 basehttp 7008 17892 "GET /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 1305
+INFO 2023-09-29 11:21:41,982 autoreload 7008 17596 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 11:21:42,847 autoreload 2364 12108 Watching for file changes with StatReloader
+INFO 2023-09-29 11:21:47,921 basehttp 2364 15872 "GET /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 1305
+ERROR 2023-09-29 11:21:52,355 log 2364 15872 Internal Server Error: /app_4/add_a_comment_to_the_article/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\middleware\clickjacking.py", line 27, in process_response
+    if response.get("X-Frame-Options") is not None:
+       ^^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'get'
+ERROR 2023-09-29 11:21:52,359 basehttp 2364 15872 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 500 70989
+ERROR 2023-09-29 11:22:01,690 log 2364 15872 Internal Server Error: /app_4/add_a_comment_to_the_article/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\middleware\clickjacking.py", line 27, in process_response
+    if response.get("X-Frame-Options") is not None:
+       ^^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'get'
+ERROR 2023-09-29 11:22:01,692 basehttp 2364 15872 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 500 70989
+INFO 2023-09-29 11:22:47,294 autoreload 2364 12108 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 11:22:48,197 autoreload 7676 10304 Watching for file changes with StatReloader
+INFO 2023-09-29 11:22:52,536 basehttp 7676 8064 "GET /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 1305
+ERROR 2023-09-29 11:22:57,149 log 7676 8064 Internal Server Error: /app_4/add_a_comment_to_the_article/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 29, in add_a_comment_to_the_article
+    return add_a_comment_to_the_article(request.GET)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 23, in add_a_comment_to_the_article
+    if request.method == 'POST':
+       ^^^^^^^^^^^^^^
+AttributeError: 'QueryDict' object has no attribute 'method'
+ERROR 2023-09-29 11:22:57,152 basehttp 7676 8064 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 500 78597
+INFO 2023-09-29 11:23:38,685 autoreload 7676 10304 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 11:23:39,805 autoreload 4376 13520 Watching for file changes with StatReloader
+INFO 2023-09-29 11:23:43,088 basehttp 4376 1888 "GET /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 1305
+INFO 2023-09-29 11:23:47,497 basehttp 4376 1888 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 1305
+INFO 2023-09-29 11:24:22,017 basehttp 4376 1888 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 1305
+INFO 2023-09-29 11:29:51,250 autoreload 4376 13520 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 11:29:52,147 autoreload 5996 1288 Watching for file changes with StatReloader
+INFO 2023-09-29 11:36:16,477 autoreload 5996 1288 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 11:36:17,342 autoreload 9588 17236 Watching for file changes with StatReloader
+INFO 2023-09-29 11:36:23,861 basehttp 9588 8040 "GET /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 1305
+INFO 2023-09-29 11:36:27,561 basehttp 9588 8040 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 1476
+INFO 2023-09-29 11:36:40,132 basehttp 9588 8040 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 1695
+INFO 2023-09-29 11:36:46,015 basehttp 9588 8040 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 1889
+INFO 2023-09-29 11:36:51,508 basehttp 9588 8040 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 2078
+INFO 2023-09-29 11:37:45,638 autoreload 9588 17236 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\models.py changed, reloading.
+INFO 2023-09-29 11:37:46,551 autoreload 5532 18044 Watching for file changes with StatReloader
+INFO 2023-09-29 11:37:47,874 basehttp 5532 17504 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 2142
+INFO 2023-09-29 11:37:56,954 basehttp 5532 17504 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 2292
+INFO 2023-09-29 11:38:03,619 basehttp 5532 17504 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 2449
+INFO 2023-09-29 12:36:07,765 basehttp 5532 16164 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 2608
+INFO 2023-09-29 12:36:11,221 basehttp 5532 16164 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 2765
+INFO 2023-09-29 12:36:40,673 basehttp 5532 16164 "GET /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 2765
+INFO 2023-09-29 12:36:43,410 basehttp 5532 16164 "GET /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 2765
+INFO 2023-09-29 12:36:44,551 basehttp 5532 16164 "GET /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 2765
+INFO 2023-09-29 12:37:29,335 autoreload 5532 18044 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 12:37:30,072 autoreload 10440 15168 Watching for file changes with StatReloader
+INFO 2023-09-29 12:37:32,684 basehttp 10440 1164 "GET /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 2765
+INFO 2023-09-29 12:37:37,399 basehttp 10440 1164 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 2914
+INFO 2023-09-29 12:37:40,698 basehttp 10440 1164 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 3063
+INFO 2023-09-29 12:37:43,943 basehttp 10440 1164 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 3212
+INFO 2023-09-29 12:38:18,427 autoreload 10440 15168 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 12:38:18,950 autoreload 18376 20580 Watching for file changes with StatReloader
+INFO 2023-09-29 12:38:20,540 basehttp 18376 16644 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 3376
+INFO 2023-09-29 12:38:24,463 basehttp 18376 16644 "GET /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 3361
+INFO 2023-09-29 12:38:28,192 basehttp 18376 16644 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 3521
+INFO 2023-09-29 12:38:31,283 basehttp 18376 16644 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 3668
+INFO 2023-09-29 12:38:33,621 basehttp 18376 16644 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 3815
+INFO 2023-09-29 12:38:37,267 basehttp 18376 16644 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 3962
+INFO 2023-09-29 12:38:39,573 basehttp 18376 16644 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 4109
+INFO 2023-09-29 12:39:34,591 autoreload 18376 20580 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 12:39:35,118 autoreload 4580 20472 Watching for file changes with StatReloader
+INFO 2023-09-29 12:39:37,943 basehttp 4580 17892 "GET /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 4096
+INFO 2023-09-29 12:39:43,884 basehttp 4580 17892 "GET /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 4096
+INFO 2023-09-29 12:39:46,591 basehttp 4580 17892 "GET /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 4096
+INFO 2023-09-29 12:39:47,769 basehttp 4580 17892 "GET /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 4096
+INFO 2023-09-29 12:39:48,693 basehttp 4580 17892 "GET /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 4096
+INFO 2023-09-29 12:39:49,628 basehttp 4580 17892 "GET /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 4096
+INFO 2023-09-29 12:41:42,010 basehttp 4580 17892 "GET /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 4096
+INFO 2023-09-29 12:41:46,734 basehttp 4580 17892 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 4246
+INFO 2023-09-29 12:42:05,974 basehttp 4580 17892 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 4396
+INFO 2023-09-29 12:42:12,621 basehttp 4580 17892 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 4546
+INFO 2023-09-29 12:42:20,990 basehttp 4580 17892 "POST /app_4/add_a_comment_to_the_article/ HTTP/1.1" 200 4698
+INFO 2023-09-29 12:44:28,015 autoreload 4580 20472 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 12:44:28,507 autoreload 6456 18868 Watching for file changes with StatReloader
+INFO 2023-09-29 12:48:05,886 autoreload 6456 18868 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 12:48:06,413 autoreload 19388 15888 Watching for file changes with StatReloader
+INFO 2023-09-29 12:57:58,226 autoreload 19388 15888 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 12:57:59,217 autoreload 21100 13144 Watching for file changes with StatReloader
+INFO 2023-09-29 13:03:09,144 autoreload 21100 13144 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 13:03:09,794 autoreload 612 19872 Watching for file changes with StatReloader
+INFO 2023-09-29 13:28:28,445 autoreload 612 19872 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 13:28:29,030 autoreload 20212 18972 Watching for file changes with StatReloader
+INFO 2023-09-29 13:28:43,049 basehttp 20212 1888 "GET /app_4/makes_a_choice/ HTTP/1.1" 200 1409
+INFO 2023-09-29 13:28:47,412 basehttp 20212 1888 "POST /app_4/makes_a_choice/ HTTP/1.1" 200 875
+INFO 2023-09-29 13:28:53,062 basehttp 20212 1888 "POST /app_4/makes_a_choice/ HTTP/1.1" 200 879
+INFO 2023-09-29 13:28:55,485 basehttp 20212 1888 "POST /app_4/makes_a_choice/ HTTP/1.1" 200 877
+INFO 2023-09-29 13:29:18,493 basehttp 20212 1888 "POST /app_4/makes_a_choice/ HTTP/1.1" 200 877
+INFO 2023-09-29 13:29:19,789 basehttp 20212 1888 "GET /app_4/makes_a_choice/ HTTP/1.1" 200 1409
+INFO 2023-09-29 13:29:21,918 basehttp 20212 1888 "POST /app_4/makes_a_choice/ HTTP/1.1" 200 993
+INFO 2023-09-29 13:29:30,898 basehttp 20212 1888 "GET /app_4/makes_a_choice/ HTTP/1.1" 200 1409
+INFO 2023-09-29 13:29:35,009 basehttp 20212 1888 "POST /app_4/makes_a_choice/ HTTP/1.1" 200 1314
+INFO 2023-09-29 13:33:34,506 autoreload 20212 18972 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\urls.py changed, reloading.
+INFO 2023-09-29 13:33:35,137 autoreload 11872 19896 Watching for file changes with StatReloader
+INFO 2023-09-29 13:33:47,576 basehttp 11872 6728 "GET /app_4/makes_a_choice/ HTTP/1.1" 200 1409
+ERROR 2023-09-29 13:33:52,068 log 11872 6728 Internal Server Error: /app_4/uninstall_or_update_the_product/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 13, in uninstall_or_update_the_product
+    return render(request, 'my_test_app_4/uninstall_or_update_the_product.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' дейтсвие' from 'выберете дейтсвие'
+ERROR 2023-09-29 13:33:52,075 basehttp 11872 6728 "GET /app_4/uninstall_or_update_the_product/ HTTP/1.1" 500 181397
+ERROR 2023-09-29 13:34:12,666 log 11872 6728 Internal Server Error: /app_4/uninstall_or_update_the_product/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 13, in uninstall_or_update_the_product
+    return render(request, 'my_test_app_4/uninstall_or_update_the_product.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'products_editor' not found. 'products_editor' is not a valid view function or pattern name.
+ERROR 2023-09-29 13:34:12,672 basehttp 11872 6728 "GET /app_4/uninstall_or_update_the_product/ HTTP/1.1" 500 165582
+INFO 2023-09-29 13:34:41,547 autoreload 11872 19896 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 13:34:42,090 autoreload 18400 11484 Watching for file changes with StatReloader
+ERROR 2023-09-29 13:34:44,831 log 18400 17740 Internal Server Error: /app_4/uninstall_or_update_the_product/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 13, in uninstall_or_update_the_product
+    return render(request, 'my_test_app_4/uninstall_or_update_the_product.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'products_editor' not found. 'products_editor' is not a valid view function or pattern name.
+ERROR 2023-09-29 13:34:44,840 basehttp 18400 17740 "GET /app_4/uninstall_or_update_the_product/ HTTP/1.1" 500 165585
+INFO 2023-09-29 13:36:20,527 autoreload 18400 11484 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\urls.py changed, reloading.
+INFO 2023-09-29 13:36:21,101 autoreload 17808 20924 Watching for file changes with StatReloader
+ERROR 2023-09-29 13:36:22,154 log 17808 4676 Internal Server Error: /app_4/uninstall_or_update_the_product/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 13, in uninstall_or_update_the_product
+    return render(request, 'my_test_app_4/uninstall_or_update_the_product.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'products_editor' with arguments '(1,)' not found. 2 pattern(s) tried: ['app_4/products_editor/\\Z', 'app_3/products_editor/\\Z']
+ERROR 2023-09-29 13:36:22,161 basehttp 17808 4676 "GET /app_4/uninstall_or_update_the_product/ HTTP/1.1" 500 167501
+INFO 2023-09-29 13:36:52,865 autoreload 17808 20924 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 13:36:53,442 autoreload 19400 14100 Watching for file changes with StatReloader
+ERROR 2023-09-29 13:36:54,575 log 19400 20816 Internal Server Error: /app_4/uninstall_or_update_the_product/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 13, in uninstall_or_update_the_product
+    return render(request, 'my_test_app_4/uninstall_or_update_the_product.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'products_editor' with arguments '(1,)' not found. 2 pattern(s) tried: ['app_4/products_editor/\\Z', 'app_3/products_editor/\\Z']
+ERROR 2023-09-29 13:36:54,584 basehttp 19400 20816 "GET /app_4/uninstall_or_update_the_product/ HTTP/1.1" 500 167505
+INFO 2023-09-29 13:38:01,687 autoreload 19400 14100 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 13:38:02,256 autoreload 144 11956 Watching for file changes with StatReloader
+INFO 2023-09-29 13:38:03,301 basehttp 144 17856 "GET /app_4/uninstall_or_update_the_product/ HTTP/1.1" 200 1241
+ERROR 2023-09-29 13:38:08,784 log 144 17856 Internal Server Error: /app_4/products_editor/1/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view my_test_app_4.views.products_editor didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-09-29 13:38:08,786 basehttp 144 17856 "GET /app_4/products_editor/1/ HTTP/1.1" 500 71539
+INFO 2023-09-29 13:39:59,405 autoreload 144 11956 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 13:40:00,869 autoreload 19040 15708 Watching for file changes with StatReloader
+INFO 2023-09-29 14:57:55,302 autoreload 19040 15708 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 14:57:58,354 autoreload 20744 21436 Watching for file changes with StatReloader
+INFO 2023-09-29 19:42:54,312 autoreload 20744 21436 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 19:42:55,374 autoreload 4460 21104 Watching for file changes with StatReloader
+INFO 2023-09-29 19:49:36,088 autoreload 13880 18520 Watching for file changes with StatReloader
+INFO 2023-09-29 19:50:00,288 basehttp 13880 1528 "GET /app_4/uninstall_or_update_the_product/ HTTP/1.1" 200 1241
+ERROR 2023-09-29 19:50:02,941 log 13880 1528 Internal Server Error: /app_4/products_editor/1/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view my_test_app_4.views.products_editor didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-09-29 19:50:02,944 basehttp 13880 1528 "GET /app_4/products_editor/1/ HTTP/1.1" 500 71539
+ERROR 2023-09-29 19:50:07,029 log 13880 1528 Internal Server Error: /app_4/products_editor/1/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view my_test_app_4.views.products_editor didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-09-29 19:50:07,033 basehttp 13880 1528 "GET /app_4/products_editor/1/ HTTP/1.1" 500 71539
+INFO 2023-09-29 19:51:06,162 autoreload 13880 18520 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 19:51:06,996 autoreload 12036 18048 Watching for file changes with StatReloader
+INFO 2023-09-29 19:51:08,361 basehttp 12036 18944 "GET /app_4/products_editor/1/ HTTP/1.1" 200 1227
+INFO 2023-09-29 19:51:13,819 basehttp 12036 18944 "GET /app_4/products_editor/1/ HTTP/1.1" 200 1227
+INFO 2023-09-29 19:51:17,377 basehttp 12036 18944 "GET /app_4/products_editor/1/ HTTP/1.1" 200 1227
+INFO 2023-09-29 19:53:27,516 autoreload 12036 18048 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 19:53:28,403 autoreload 21784 22096 Watching for file changes with StatReloader
+INFO 2023-09-29 19:53:29,622 basehttp 21784 15980 "GET /app_4/products_editor/1/ HTTP/1.1" 200 1734
+INFO 2023-09-29 19:54:14,041 basehttp 21784 15980 "POST /app_4/products_editor/1/ HTTP/1.1" 200 1812
+INFO 2023-09-29 19:54:32,075 basehttp 21784 15980 "POST /app_4/products_editor/1/ HTTP/1.1" 200 1812
+INFO 2023-09-29 19:54:57,440 basehttp 21784 15980 "POST /app_4/products_editor/1/ HTTP/1.1" 200 1813
+INFO 2023-09-29 19:56:34,708 basehttp 21784 15980 "GET /app_4/products_editor/1/ HTTP/1.1" 200 1734
+INFO 2023-09-29 19:56:37,305 basehttp 21784 15980 "GET /app_4/products_editor/1/ HTTP/1.1" 200 1734
+INFO 2023-09-29 19:56:59,836 basehttp 21784 15980 "POST /app_4/products_editor/1/ HTTP/1.1" 200 1784
+INFO 2023-09-29 20:07:45,832 autoreload 21784 22096 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\forms.py changed, reloading.
+INFO 2023-09-29 20:07:46,602 autoreload 17428 23404 Watching for file changes with StatReloader
+ERROR 2023-09-29 20:07:50,264 log 17428 19768 Internal Server Error: /app_4/products_editor/1/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view my_test_app_4.views.products_editor didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-09-29 20:07:50,267 basehttp 17428 19768 "GET /app_4/products_editor/1/ HTTP/1.1" 500 71408
+INFO 2023-09-29 20:07:55,864 basehttp 17428 19768 "GET /app_4/products_editor/2/ HTTP/1.1" 200 1398
+INFO 2023-09-29 20:08:47,806 basehttp 17428 19768 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1925
+INFO 2023-09-29 20:09:17,504 autoreload 17428 23404 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 20:09:18,389 autoreload 14348 22584 Watching for file changes with StatReloader
+INFO 2023-09-29 20:09:19,536 basehttp 14348 22604 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1407
+INFO 2023-09-29 20:09:21,558 basehttp 14348 22604 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1407
+INFO 2023-09-29 20:13:52,331 autoreload 14348 22584 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 20:13:53,161 autoreload 22080 19928 Watching for file changes with StatReloader
+INFO 2023-09-29 20:13:56,834 basehttp 22080 23024 "GET /app_4/products_editor/2/ HTTP/1.1" 200 1398
+ERROR 2023-09-29 20:14:00,396 log 22080 23024 Internal Server Error: /app_4/products_editor/1/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view my_test_app_4.views.products_editor didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-09-29 20:14:00,399 basehttp 22080 23024 "GET /app_4/products_editor/1/ HTTP/1.1" 500 71539
+INFO 2023-09-29 20:14:08,960 basehttp 22080 23024 "GET /app_4/products_editor/2/ HTTP/1.1" 200 1398
+ERROR 2023-09-29 20:14:59,104 log 22080 23024 Internal Server Error: /app_4/products_editor/1/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view my_test_app_4.views.products_editor didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-09-29 20:14:59,106 basehttp 22080 23024 "GET /app_4/products_editor/1/ HTTP/1.1" 500 71539
+INFO 2023-09-29 20:15:02,941 basehttp 22080 23024 "GET /app_4/products_editor/2/ HTTP/1.1" 200 1398
+ERROR 2023-09-29 20:15:06,750 log 22080 23024 Internal Server Error: /app_4/products_editor/1/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view my_test_app_4.views.products_editor didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-09-29 20:15:06,752 basehttp 22080 23024 "GET /app_4/products_editor/1/ HTTP/1.1" 500 71539
+INFO 2023-09-29 20:16:56,317 autoreload 22080 19928 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 20:16:57,382 autoreload 23248 19864 Watching for file changes with StatReloader
+ERROR 2023-09-29 20:16:58,572 log 23248 9172 Internal Server Error: /app_4/products_editor/1/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view my_test_app_4.views.products_editor didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-09-29 20:16:58,575 basehttp 23248 9172 "GET /app_4/products_editor/1/ HTTP/1.1" 500 71676
+ERROR 2023-09-29 20:17:03,926 log 23248 9172 Internal Server Error: /app_4/products_editor/1/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view my_test_app_4.views.products_editor didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-09-29 20:17:03,929 basehttp 23248 9172 "GET /app_4/products_editor/1/ HTTP/1.1" 500 71539
+INFO 2023-09-29 20:17:05,858 basehttp 23248 9172 "GET /app_4/products_editor/2/ HTTP/1.1" 200 1398
+INFO 2023-09-29 20:17:08,184 basehttp 23248 9172 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1407
+INFO 2023-09-29 20:19:15,194 autoreload 23248 19864 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 20:19:16,061 autoreload 19932 23436 Watching for file changes with StatReloader
+INFO 2023-09-29 20:19:17,344 basehttp 19932 13680 "GET /app_4/products_editor/2/ HTTP/1.1" 200 1398
+ERROR 2023-09-29 20:19:20,085 log 19932 13680 Internal Server Error: /app_4/products_editor/1/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view my_test_app_4.views.products_editor didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-09-29 20:19:20,087 basehttp 19932 13680 "GET /app_4/products_editor/1/ HTTP/1.1" 500 71539
+ERROR 2023-09-29 20:20:05,468 log 19932 13680 Internal Server Error: /app_4/products_editor/1/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view my_test_app_4.views.products_editor didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-09-29 20:20:05,472 basehttp 19932 13680 "GET /app_4/products_editor/1/ HTTP/1.1" 500 71539
+INFO 2023-09-29 20:21:14,508 autoreload 19932 23436 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 20:21:15,354 autoreload 976 21280 Watching for file changes with StatReloader
+INFO 2023-09-29 20:21:16,678 basehttp 976 22128 "GET /app_4/products_editor/1/ HTTP/1.1" 200 1734
+INFO 2023-09-29 20:21:22,047 basehttp 976 22128 "GET /app_4/products_editor/2/ HTTP/1.1" 200 1398
+INFO 2023-09-29 20:21:56,657 autoreload 976 21280 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 20:21:57,476 autoreload 11340 6860 Watching for file changes with StatReloader
+INFO 2023-09-29 20:22:01,643 basehttp 11340 540 "GET /app_4/products_editor/1/ HTTP/1.1" 200 1734
+INFO 2023-09-29 20:26:26,915 autoreload 11340 6860 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 20:26:27,730 autoreload 23040 16992 Watching for file changes with StatReloader
+INFO 2023-09-29 20:26:29,041 basehttp 23040 18888 "GET /app_4/products_editor/1/ HTTP/1.1" 200 1734
+INFO 2023-09-29 20:35:43,069 autoreload 23040 16992 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 20:35:45,327 autoreload 4388 21624 Watching for file changes with StatReloader
+INFO 2023-09-29 21:42:12,585 autoreload 4388 21624 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\urls.py changed, reloading.
+INFO 2023-09-29 21:42:13,715 autoreload 22088 21512 Watching for file changes with StatReloader
+INFO 2023-09-29 21:44:10,940 autoreload 22088 21512 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 21:44:11,733 autoreload 20744 18696 Watching for file changes with StatReloader
+INFO 2023-09-29 21:48:01,718 autoreload 20744 18696 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 21:48:02,678 autoreload 4692 21320 Watching for file changes with StatReloader
+INFO 2023-09-29 21:49:33,148 autoreload 4692 21320 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 21:49:34,057 autoreload 18824 9332 Watching for file changes with StatReloader
+INFO 2023-09-29 21:49:42,160 basehttp 18824 17752 "GET /app_4/products_editor/2/ HTTP/1.1" 200 1398
+ERROR 2023-09-29 21:49:44,516 log 18824 17752 Internal Server Error: /app_4/products_editor/2/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 42, in products_editor
+    return update_product(request, product_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 51, in update_product
+    product = ProductModel.object.filter(pk=update_product.__dict__['id_product']).first()
+              ^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'Product' has no attribute 'object'
+ERROR 2023-09-29 21:49:44,520 basehttp 18824 17752 "POST /app_4/products_editor/2/ HTTP/1.1" 500 76320
+INFO 2023-09-29 21:50:34,805 autoreload 18824 9332 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 21:50:35,650 autoreload 20176 4156 Watching for file changes with StatReloader
+INFO 2023-09-29 21:50:39,975 basehttp 20176 15940 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1818
+INFO 2023-09-29 21:51:13,483 basehttp 20176 15940 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1512
+INFO 2023-09-29 21:51:34,789 basehttp 20176 15940 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1818
+INFO 2023-09-29 21:53:04,797 basehttp 20176 15940 "GET /app_4/products_editor/2/ HTTP/1.1" 200 1398
+INFO 2023-09-29 21:53:07,188 basehttp 20176 15940 "GET /app_4/uninstall_or_update_the_product/ HTTP/1.1" 200 1241
+INFO 2023-09-29 21:53:07,965 basehttp 20176 15940 "GET /app_4/uninstall_or_update_the_product/ HTTP/1.1" 200 1241
+INFO 2023-09-29 21:53:08,417 basehttp 20176 15940 "GET /app_4/uninstall_or_update_the_product/ HTTP/1.1" 200 1241
+INFO 2023-09-29 21:53:10,392 basehttp 20176 15940 "GET /app_4/products_editor/2/ HTTP/1.1" 200 1398
+INFO 2023-09-29 21:53:14,576 basehttp 20176 15940 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1822
+INFO 2023-09-29 21:53:35,148 basehttp 20176 15940 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1506
+INFO 2023-09-29 21:53:48,913 basehttp 20176 15940 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1818
+INFO 2023-09-29 21:54:00,704 basehttp 20176 15940 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1508
+INFO 2023-09-29 21:55:59,052 autoreload 20176 4156 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 21:55:59,845 autoreload 4580 22592 Watching for file changes with StatReloader
+INFO 2023-09-29 21:56:02,229 basehttp 4580 7176 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1818
+INFO 2023-09-29 21:56:13,759 basehttp 4580 7176 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1500
+INFO 2023-09-29 21:56:22,823 basehttp 4580 7176 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1818
+INFO 2023-09-29 21:56:34,763 basehttp 4580 7176 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1508
+INFO 2023-09-29 21:56:36,631 basehttp 4580 7176 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1818
+INFO 2023-09-29 21:56:42,443 basehttp 4580 7176 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1818
+INFO 2023-09-29 21:58:32,057 autoreload 4580 22592 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 21:58:32,915 autoreload 9980 14788 Watching for file changes with StatReloader
+INFO 2023-09-29 21:58:40,082 basehttp 9980 20152 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1793
+INFO 2023-09-29 21:58:46,123 basehttp 9980 20152 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1502
+INFO 2023-09-29 21:58:49,534 basehttp 9980 20152 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1818
+INFO 2023-09-29 21:58:56,429 basehttp 9980 20152 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1506
+INFO 2023-09-29 22:00:52,003 autoreload 9980 14788 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 22:00:52,827 autoreload 16548 17880 Watching for file changes with StatReloader
+INFO 2023-09-29 22:01:14,728 basehttp 16548 7152 "GET /app_4/products_editor/2/ HTTP/1.1" 200 1398
+INFO 2023-09-29 22:01:18,219 basehttp 16548 7152 "GET /app_4/uninstall_or_update_the_product/ HTTP/1.1" 200 1241
+INFO 2023-09-29 22:01:19,004 basehttp 16548 7152 "GET /app_4/uninstall_or_update_the_product/ HTTP/1.1" 200 1241
+INFO 2023-09-29 22:01:21,632 basehttp 16548 7152 "GET /app_4/products_editor/2/ HTTP/1.1" 200 1398
+INFO 2023-09-29 22:01:27,962 basehttp 16548 7152 "GET /app_4/products_editor/2/ HTTP/1.1" 200 1398
+INFO 2023-09-29 22:01:36,666 basehttp 16548 7152 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1980
+INFO 2023-09-29 22:01:59,369 basehttp 16548 7152 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1497
+INFO 2023-09-29 22:09:05,458 autoreload 16548 17880 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 22:09:06,439 autoreload 20248 19492 Watching for file changes with StatReloader
+INFO 2023-09-29 22:11:40,846 autoreload 20248 19492 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 22:11:41,779 autoreload 18760 16296 Watching for file changes with StatReloader
+ERROR 2023-09-29 22:11:47,205 log 18760 9832 Internal Server Error: /app_4/products_editor/2/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 51, in products_editor
+    context = {'form': form, 'massage': massage, 'button_name': button_name, 'product_id': product_id}
+                                                                                           ^^^^^^^^^^
+NameError: name 'product_id' is not defined
+ERROR 2023-09-29 22:11:47,210 basehttp 18760 9832 "GET /app_4/products_editor/2/ HTTP/1.1" 500 71111
+ERROR 2023-09-29 22:11:48,478 log 18760 9832 Internal Server Error: /app_4/products_editor/2/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 51, in products_editor
+    context = {'form': form, 'massage': massage, 'button_name': button_name, 'product_id': product_id}
+                                                                                           ^^^^^^^^^^
+NameError: name 'product_id' is not defined
+ERROR 2023-09-29 22:11:48,481 basehttp 18760 9832 "GET /app_4/products_editor/2/ HTTP/1.1" 500 71379
+INFO 2023-09-29 22:12:16,045 autoreload 18760 16296 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 22:12:16,851 autoreload 18960 18720 Watching for file changes with StatReloader
+ERROR 2023-09-29 22:12:17,996 log 18960 15376 Internal Server Error: /app_4/products_editor/2/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 51, in products_editor
+    context = {'form': form, 'massage': massage, 'button_name': button_name, 'product_id': product_id}
+                                                                                           ^^^^^^^^^^
+NameError: name 'product_id' is not defined
+ERROR 2023-09-29 22:12:17,998 basehttp 18960 15376 "GET /app_4/products_editor/2/ HTTP/1.1" 500 71379
+ERROR 2023-09-29 22:12:21,213 log 18960 15376 Internal Server Error: /app_4/products_editor/2/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 51, in products_editor
+    context = {'form': form, 'massage': massage, 'button_name': button_name, 'product_id': product_id}
+                                                                                           ^^^^^^^^^^
+NameError: name 'product_id' is not defined
+ERROR 2023-09-29 22:12:21,215 basehttp 18960 15376 "GET /app_4/products_editor/2/ HTTP/1.1" 500 71431
+INFO 2023-09-29 22:13:00,316 autoreload 18960 18720 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 22:13:01,142 autoreload 6468 18624 Watching for file changes with StatReloader
+ERROR 2023-09-29 22:13:02,266 log 6468 20920 Internal Server Error: /app_4/products_editor/2/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 51, in products_editor
+    context = {'form': form, 'massage': massage, 'button_name': button_name, 'product_id': product_id}
+                                                                                           ^^^^^^^^^^
+NameError: name 'product_id' is not defined
+ERROR 2023-09-29 22:13:02,270 basehttp 6468 20920 "GET /app_4/products_editor/2/ HTTP/1.1" 500 71570
+ERROR 2023-09-29 22:13:03,947 log 6468 20920 Internal Server Error: /app_4/products_editor/2/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 51, in products_editor
+    context = {'form': form, 'massage': massage, 'button_name': button_name, 'product_id': product_id}
+                                                                                           ^^^^^^^^^^
+NameError: name 'product_id' is not defined
+ERROR 2023-09-29 22:13:03,950 basehttp 6468 20920 "GET /app_4/products_editor/2/ HTTP/1.1" 500 71433
+ERROR 2023-09-29 22:13:34,218 log 6468 20920 Internal Server Error: /app_4/products_editor/1/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 51, in products_editor
+    context = {'form': form, 'massage': massage, 'button_name': button_name, 'product_id': product_id}
+                                                                                           ^^^^^^^^^^
+NameError: name 'product_id' is not defined
+ERROR 2023-09-29 22:13:34,221 basehttp 6468 20920 "GET /app_4/products_editor/1/ HTTP/1.1" 500 71244
+INFO 2023-09-29 22:14:35,732 autoreload 6468 18624 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 22:14:36,560 autoreload 17464 17692 Watching for file changes with StatReloader
+INFO 2023-09-29 22:15:13,318 autoreload 17464 17692 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\urls.py changed, reloading.
+INFO 2023-09-29 22:15:13,989 autoreload 21532 16524 Watching for file changes with StatReloader
+INFO 2023-09-29 22:15:16,906 basehttp 21532 21788 "GET /app_4/products_editor/2/ HTTP/1.1" 200 1398
+ERROR 2023-09-29 22:15:18,884 log 21532 21788 Internal Server Error: /app_4/products_editor/2/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 46, in products_editor
+    return render(request, 'my_test_app_4/update product.html', {'form': form, 'massage': massage, 'product_str': product_str})
+                                                                                                                  ^^^^^^^^^^^
+NameError: name 'product_str' is not defined
+ERROR 2023-09-29 22:15:18,887 basehttp 21532 21788 "POST /app_4/products_editor/2/ HTTP/1.1" 500 72390
+INFO 2023-09-29 22:15:24,860 basehttp 21532 21788 "GET /app_4/products_editor/1/ HTTP/1.1" 200 1734
+INFO 2023-09-29 22:15:29,788 basehttp 21532 21788 "POST /app_4/products_editor/1/ HTTP/1.1" 200 1786
+INFO 2023-09-29 22:15:39,347 basehttp 21532 21788 "GET /app_4/products_editor/2/ HTTP/1.1" 200 1398
+INFO 2023-09-29 22:16:27,145 autoreload 21532 16524 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 22:16:28,164 autoreload 23440 20920 Watching for file changes with StatReloader
+INFO 2023-09-29 22:16:29,512 basehttp 23440 17892 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1818
+INFO 2023-09-29 22:16:36,837 basehttp 23440 17892 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1532
+INFO 2023-09-29 22:21:35,094 autoreload 23440 20920 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 22:21:35,973 autoreload 16676 7596 Watching for file changes with StatReloader
+INFO 2023-09-29 22:21:39,231 basehttp 16676 18548 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1532
+INFO 2023-09-29 22:21:41,693 basehttp 16676 18548 "GET /app_4/products_editor/2/ HTTP/1.1" 200 1433
+INFO 2023-09-29 22:21:43,430 basehttp 16676 18548 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1818
+INFO 2023-09-29 22:21:49,141 basehttp 16676 18548 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1532
+INFO 2023-09-29 22:23:01,216 autoreload 16676 7596 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 22:23:02,024 autoreload 18856 17564 Watching for file changes with StatReloader
+INFO 2023-09-29 22:23:03,476 basehttp 18856 18608 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1818
+INFO 2023-09-29 22:23:10,275 basehttp 18856 18608 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1531
+INFO 2023-09-29 22:23:58,489 autoreload 18856 17564 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 22:23:59,322 autoreload 20028 18736 Watching for file changes with StatReloader
+ERROR 2023-09-29 22:24:02,678 log 20028 1544 Internal Server Error: /app_4/products_editor/2/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 19, in products_editor
+    print(products_editor.__dict__['product_id'])
+          ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'product_id'
+ERROR 2023-09-29 22:24:02,681 basehttp 20028 1544 "GET /app_4/products_editor/2/ HTTP/1.1" 500 70507
+ERROR 2023-09-29 22:24:12,143 log 20028 1544 Internal Server Error: /app_4/products_editor/2/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 19, in products_editor
+    print(products_editor.__dict__['product_id'])
+          ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'product_id'
+ERROR 2023-09-29 22:24:12,148 basehttp 20028 1544 "GET /app_4/products_editor/2/ HTTP/1.1" 500 70507
+INFO 2023-09-29 22:24:30,711 basehttp 20028 1544 "GET /app_4/uninstall_or_update_the_product/ HTTP/1.1" 200 1241
+ERROR 2023-09-29 22:24:34,489 log 20028 1544 Internal Server Error: /app_4/products_editor/2/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 19, in products_editor
+    print(products_editor.__dict__['product_id'])
+          ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'product_id'
+ERROR 2023-09-29 22:24:34,620 basehttp 20028 1544 "GET /app_4/products_editor/2/ HTTP/1.1" 500 70696
+ERROR 2023-09-29 22:25:11,835 log 20028 1544 Internal Server Error: /app_4/products_editor/21/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 19, in products_editor
+    print(products_editor.__dict__['product_id'])
+          ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'product_id'
+ERROR 2023-09-29 22:25:11,839 basehttp 20028 1544 "GET /app_4/products_editor/21/ HTTP/1.1" 500 70519
+INFO 2023-09-29 22:25:28,403 autoreload 20028 18736 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 22:25:29,128 autoreload 20068 3260 Watching for file changes with StatReloader
+ERROR 2023-09-29 22:25:33,152 log 20068 13092 Internal Server Error: /app_4/products_editor/21/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 70, in products_editor
+    context = {'form': form, 'massage': massage, 'button_name': button_name}
+                       ^^^^
+NameError: name 'form' is not defined
+ERROR 2023-09-29 22:25:33,156 basehttp 20068 13092 "GET /app_4/products_editor/21/ HTTP/1.1" 500 71419
+INFO 2023-09-29 22:25:36,721 basehttp 20068 13092 "GET /app_4/products_editor/2/ HTTP/1.1" 200 1433
+INFO 2023-09-29 22:25:57,488 autoreload 20068 3260 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 22:25:58,235 autoreload 23504 8204 Watching for file changes with StatReloader
+INFO 2023-09-29 22:26:02,062 basehttp 23504 1420 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1818
+INFO 2023-09-29 22:26:08,075 basehttp 23504 1420 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1531
+INFO 2023-09-29 22:26:48,418 autoreload 23504 8204 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 22:26:49,201 autoreload 1280 22076 Watching for file changes with StatReloader
+INFO 2023-09-29 22:26:53,125 basehttp 1280 21372 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1818
+INFO 2023-09-29 22:26:58,218 basehttp 1280 21372 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1532
+INFO 2023-09-29 22:28:05,936 autoreload 1280 22076 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 22:28:06,779 autoreload 23548 22092 Watching for file changes with StatReloader
+INFO 2023-09-29 22:28:37,810 autoreload 23548 22092 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 22:28:38,511 autoreload 20900 22800 Watching for file changes with StatReloader
+INFO 2023-09-29 22:28:41,195 basehttp 20900 22636 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1818
+INFO 2023-09-29 22:28:46,755 basehttp 20900 22636 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1534
+INFO 2023-09-29 22:33:03,501 autoreload 20900 22800 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 22:33:04,465 autoreload 144 9792 Watching for file changes with StatReloader
+ERROR 2023-09-29 22:33:07,891 log 144 2364 Internal Server Error: /app_4/products_editor/2/
+Traceback (most recent call last):
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py", line 27, in products_editor
+    product = ProductModel.objects.filter(pk=products_editor.__dict__['product_id']).first()
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'product_id'
+ERROR 2023-09-29 22:33:07,896 basehttp 144 2364 "POST /app_4/products_editor/2/ HTTP/1.1" 500 72393
+INFO 2023-09-29 22:33:11,647 basehttp 144 2364 "GET /app_4/products_editor/2/ HTTP/1.1" 200 1424
+INFO 2023-09-29 22:33:16,402 basehttp 144 2364 "POST /app_4/products_editor/2/ HTTP/1.1" 200 1822
+INFO 2023-09-29 22:33:21,828 basehttp 144 2364 "POST /app_4/products_editor/2/ HTTP/1.1" 200 792
+INFO 2023-09-29 22:34:18,721 autoreload 144 9792 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 22:34:19,817 autoreload 4300 18024 Watching for file changes with StatReloader
+INFO 2023-09-29 22:36:04,726 autoreload 4300 18024 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-29 22:36:05,858 autoreload 17692 22984 Watching for file changes with StatReloader
+INFO 2023-09-29 22:38:09,881 autoreload 17692 22984 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-30 14:19:32,532 autoreload 8584 19780 Watching for file changes with StatReloader
+INFO 2023-09-30 14:27:01,800 autoreload 14824 15888 Watching for file changes with StatReloader
+INFO 2023-09-30 14:30:09,931 autoreload 14128 10704 Watching for file changes with StatReloader
+INFO 2023-09-30 14:32:38,901 autoreload 16388 21268 Watching for file changes with StatReloader
+INFO 2023-09-30 14:33:05,501 autoreload 6508 11108 Watching for file changes with StatReloader
+INFO 2023-09-30 14:35:16,815 autoreload 9680 14276 Watching for file changes with StatReloader
+INFO 2023-09-30 14:35:53,490 autoreload 9680 14276 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_app_4\views.py changed, reloading.
+INFO 2023-09-30 14:35:53,990 autoreload 10848 1900 Watching for file changes with StatReloader
+INFO 2023-09-30 14:36:03,283 autoreload 360 10844 Watching for file changes with StatReloader
+INFO 2023-09-30 14:38:33,654 autoreload 600 9252 Watching for file changes with StatReloader
+INFO 2023-09-30 14:38:54,806 autoreload 600 9252 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_project_django\settings.py changed, reloading.
+INFO 2023-09-30 14:38:55,285 autoreload 10368 17196 Watching for file changes with StatReloader
+INFO 2023-09-30 14:39:11,265 autoreload 10368 17196 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_project_django\settings.py changed, reloading.
+INFO 2023-09-30 14:39:11,762 autoreload 8732 14296 Watching for file changes with StatReloader
+INFO 2023-09-30 14:39:16,293 autoreload 8732 14296 C:\Users\pollove\Desktop\my_test_project\my_test_project_django\my_test_project_django\settings.py changed, reloading.
+INFO 2023-09-30 14:39:16,779 autoreload 22772 23112 Watching for file changes with StatReloader
+INFO 2023-09-30 14:42:21,710 autoreload 1004 18936 Watching for file changes with StatReloader
+INFO 2023-09-30 14:44:08,018 autoreload 14992 15448 Watching for file changes with StatReloader
+INFO 2023-09-30 14:44:39,638 autoreload 10612 14616 Watching for file changes with StatReloader
