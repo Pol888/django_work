@@ -22,6 +22,7 @@ urlpatterns = [
     #path('app_1', include('my_test_app.urls')),
     #path('app_2', include('my_test_app_2.urls')),
     #path('app_3', include('my_test_app_3.urls')),
-    #path('app_4', include('my_test_app_4.urls')),
+    path('app_4', include('my_test_app_4.urls')),
     path('app_5', include('my_test_app_5.urls')),
+    #path('__debug__/', include('debug_toolbar.urls'))
 ]

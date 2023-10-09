@@ -11,6 +11,9 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 import logging
 from pathlib import Path
+import os
+
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,20 +23,22 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-$nt3#i!cir3m$@omoor003r_wekcr-^0d3(-^9(g*gr#*6tg0j'
-
+SECRET_KEY = os.getenv('SECRET_KEY')
+# 'django-insecure-$nt3#i!cir3m$@omoor003r_wekcr-^0d3(-^9(g*gr#*6tg0j'
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     '192.168.1.136',
     '127.0.0.1',
+    'supersite.pythonanywhere.com'
 ]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'debug_toolbar',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -43,11 +48,12 @@ INSTALLED_APPS = [
     #'my_test_app',
     #'my_test_app_2',
     #my_test_app_3',
-    #'my_test_app_4',
+    'my_test_app_4',
     'my_test_app_5',
 ]
 
 MIDDLEWARE = [
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -55,6 +61,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
 ]
 
 ROOT_URLCONF = 'my_test_project_django.urls'
@@ -83,8 +90,16 @@ WSGI_APPLICATION = 'my_test_project_django.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'supersite$default',
+        'USER': 'supersite',
+        'PASSWORD': os.getenv('MYSQL_PASSWORD'),
+        'HOST': 'supersite.mysql.pythonanywhere-services.com',
+        'OPTIONS': {
+            'init_command': "SET NAMES 'utf8mb4';SET sql_mode='STRICT_TRANS_TABLES'",
+            'charset': 'utf8mb4',
+
+        }
     }
 }
 
@@ -122,7 +137,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
-
+STATIC_ROOT = BASE_DIR / 'static/'
 STATIC_URL = 'static/'
 
 # Default primary key field type
@@ -171,3 +186,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #}
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+
+INTERNAL_IPS = ['127.0.0.1']
+
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+
+
